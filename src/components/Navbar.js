@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react';
+import Image from "next/image";
 import { Leaf, Menu } from 'lucide-react';
 import Link from 'next/link';
 import LanguageSwitcher from '../components/language/LanguageSwitcher';
@@ -35,8 +36,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
-            <Leaf className="h-10 w-10" />
-            <span className="font-bold text-2xl">Sustentabilidade</span>
+          <Image
+                width={100}
+                height={100}
+                src="/images/logo2_v2.png"
+                alt="Logo sustentability"
+                className="h-10 w-full rounded-lg object-cover object-top" />
           </div>
 
           <div className="hidden md:flex space-x-6 mx-auto">
