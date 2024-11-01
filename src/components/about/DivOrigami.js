@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SiAmazon, SiGithub, SiGoogle, SiMeta, SiTwitch } from "react-icons/si";
+import { SiNextdotjs, SiGithub, SiGoogle, SiOpenai, SiCanva } from "react-icons/si";
 import { twMerge } from "tailwind-merge";
 
 export const DivOrigami = () => {
@@ -9,19 +9,19 @@ export const DivOrigami = () => {
       <LogoRolodex
         items={[
           <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            <SiAmazon />
+            <SiNextdotjs />
           </LogoItem>,
           <LogoItem key={2} className="bg-green-300 text-neutral-900">
             <SiGoogle />
           </LogoItem>,
           <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiMeta />
+            <SiOpenai />
           </LogoItem>,
           <LogoItem key={4} className="bg-white text-black">
             <SiGithub />
           </LogoItem>,
           <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiTwitch />
+            <SiCanva />
           </LogoItem>,
         ]}
       />
