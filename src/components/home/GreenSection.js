@@ -17,18 +17,18 @@ export default function GreenSection() {
 
   const content = {
     pt: {
-      heading: 'Nossas Soluções Sustentáveis',
+      heading: 'Inteligência Artificial na Mitigação das Mudanças Climáticas',
       solutions: [
         {
-          title: "Energia Renovável",
+          title: "Monitoramento Ambiental em Tempo Real",
           description: "Implementamos soluções de energia solar e eólica para reduzir a dependência de combustíveis fósseis."
         },
         {
-          title: "Eficiência Energética",
+          title: "Otimização de Energia Renovável",
           description: "Otimizamos o consumo de energia em edifícios e processos industriais, reduzindo custos e emissões."
         },
         {
-          title: "Gestão de Resíduos",
+          title: "Gestão Inteligente de Resíduos",
           description: "Desenvolvemos estratégias de reciclagem e reutilização para minimizar o impacto ambiental."
         },
       ],
