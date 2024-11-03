@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SiNextdotjs, SiGithub, SiGoogle, SiOpenai, SiCanva } from "react-icons/si";
+import { SiNextdotjs, SiGithub, SiGooglescholar, SiOpenai, SiCanva, SiVercel } from "react-icons/si";
 import { twMerge } from "tailwind-merge";
 
 export const DivOrigami = () => {
@@ -11,17 +11,20 @@ export const DivOrigami = () => {
           <LogoItem key={1} className="bg-orange-300 text-neutral-900">
             <SiNextdotjs />
           </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
-            <SiGoogle />
+          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
+            <SiVercel />
           </LogoItem>,
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
+          <LogoItem key={2} className="bg-green-300 text-neutral-900">
+            <SiGooglescholar />
+          </LogoItem>,
+          <LogoItem key={5} className="bg-blue-500 text-neutral-300">
+            <SiCanva />
+          </LogoItem>,
+          <LogoItem key={3} className="bg-neutral-800 text-neutral-200">
             <SiOpenai />
           </LogoItem>,
-          <LogoItem key={4} className="bg-white text-black">
+          <LogoItem key={4} className="bg-neutral-200 text-neutral-800">
             <SiGithub />
-          </LogoItem>,
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiCanva />
           </LogoItem>,
         ]}
       />
