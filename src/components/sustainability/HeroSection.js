@@ -20,7 +20,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Smart<br />Sustainability
+              EcoAI
             </motion.h1>
             <motion.p 
               className="text-gray-400 text-lg max-w-lg"
@@ -28,17 +28,8 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              Transforme sua empresa com soluções sustentáveis inteligentes. 
-              Descubra como a tecnologia pode impulsionar práticas eco-friendly.
+              A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.
             </motion.p>
-            <motion.button 
-              className="bg-[#90B290] hover:bg-[#7A997A] text-white px-6 py-3 rounded-full inline-flex items-center gap-2 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Comece agora
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
           </div>
 
           <motion.div 
@@ -49,17 +40,8 @@ export default function HeroSection() {
           >
             <h2 className="text-2xl font-semibold text-white">Learn more</h2>
             <p className="text-gray-400 max-w-lg">
-              Explore nossa plataforma e descubra como podemos ajudar sua empresa 
-              a alcançar seus objetivos de sustentabilidade de forma eficiente.
+            A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado. Ao utilizar modelos de aprendizado de máquina, análise de dados e sistemas inteligentes, a IA permite a criação de abordagens proativas e otimizadas para o combate às alterações climáticas.
             </p>
-            <motion.button 
-              className="bg-[#90B290] hover:bg-[#7A997A] text-white px-6 py-3 rounded-full inline-flex items-center gap-2 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Saiba mais
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
           </motion.div>
         </motion.div>
 

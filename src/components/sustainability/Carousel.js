@@ -90,14 +90,14 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden  py-8 px-4">
+    <div className="relative overflow-hidden bg-neutral-950 py-8 px-4">
         <motion.h2 
-          className="text-3xl md:text-4xl font-bold text-center text-black "
+          className="text-3xl md:text-4xl font-bold text-center text-white "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Nossas Soluções
+          Mais artigos
         </motion.h2>
 
       <motion.div

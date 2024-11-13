@@ -21,18 +21,14 @@ const StaggeredDropDown = ({ language }) => {
 
   const dropdownItems = {
     pt: {
-      postActions: 'Menu',
-      edit: 'Editar',
-      duplicate: 'Duplicar',
-      share: 'Compartilhar',
-      remove: 'Remover',
+      home: 'Inicio',
+      sustainability: 'Sustentabilidade',
+      about: 'Sobre',
     },
     en: {
-      postActions: 'Menu',
-      edit: 'Edit',
-      duplicate: 'Duplicate',
-      share: 'Share',
-      remove: 'Remove',
+      home: 'Home',
+      sustainability: 'Sustainability',
+      about: 'About',
     },
   };
 
@@ -54,27 +50,28 @@ const StaggeredDropDown = ({ language }) => {
         style={{ originY: "top", translateX: "-50%" }}
         className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
       >
-        <Option setOpen={setOpen} Icon={Edit} text={dropdownItems[language].edit} />
-        <Option setOpen={setOpen} Icon={PlusSquare} text={dropdownItems[language].duplicate} />
-        <Option setOpen={setOpen} Icon={Share} text={dropdownItems[language].share} />
-        <Option setOpen={setOpen} Icon={Trash} text={dropdownItems[language].remove} />
+        <Option setOpen={setOpen} Icon={Edit} text={dropdownItems[language].home} href="/" />
+        <Option setOpen={setOpen} Icon={PlusSquare} text={dropdownItems[language].sustainability} href="/sustainability" />
+        <Option setOpen={setOpen} Icon={Share} text={dropdownItems[language].about} href="/about" />
       </motion.ul>
     </motion.div>
   );
 };
 
-const Option = ({ text, Icon, setOpen }) => {
+const Option = ({ text, Icon, setOpen, href }) => {
   return (
-    <motion.li
-      variants={itemVariants}
-      onClick={() => setOpen(false)}
-      className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
-    >
-      <motion.span variants={actionIconVariants}>
-        <Icon size={16} />
-      </motion.span>
-      <span>{text}</span>
-    </motion.li>
+    <Link href={href} passHref>
+      <motion.li
+        variants={itemVariants}
+        onClick={() => setOpen(false)}
+        className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 transition-colors cursor-pointer"
+      >
+        <motion.span variants={actionIconVariants}>
+          <Icon size={16} />
+        </motion.span>
+        <span>{text}</span>
+      </motion.li>
+    </Link>
   );
 };
 
@@ -106,23 +103,19 @@ const Navbar = () => {
               alt="Logo sustentability"
               className="h-10 w-full rounded-lg object-cover object-top" />
           </div>
-
           <div className="hidden md:flex space-x-6 mx-auto">
             <NavButton href="/">{navItems[language].home}</NavButton>
             <NavButton href="/sustainability">{navItems[language].sustainability}</NavButton>
             <NavButton href="/about">{navItems[language].about}</NavButton>
           </div>
-
           <div className="hidden md:flex">
             <LanguageSwitcher />
           </div>
-
           <div className="md:hidden">
             <StaggeredDropDown language={language} />
           </div>
         </div>
       </div>
-
     </nav>
   );
 };

@@ -35,18 +35,18 @@ export default function GreenSection() {
       exploreButton: "Explore Todas as Soluções"
     },
     en: {
-      heading: 'Our Sustainable Solutions',
+      heading: 'Artificial Intelligence in Climate Change Mitigation',
       solutions: [
         {
-          title: "Renewable Energy",
+          title: "Real-Time Environmental Monitoring",
           description: "We implement solar and wind energy solutions to reduce dependence on fossil fuels."
         },
         {
-          title: "Energy Efficiency",
+          title: "Renewable Energy Optimization",
           description: "We optimize energy consumption in buildings and industrial processes, reducing costs and emissions."
         },
         {
-          title: "Waste Management",
+          title: "Intelligent Waste Management",
           description: "We develop recycling and reuse strategies to minimize environmental impact."
         },
       ],
