@@ -3,7 +3,7 @@
 import React from 'react';
 import { useLanguage } from '../language/LanguageContext';
 import { motion } from 'framer-motion';
-import { ExpandableCardDemo } from './Expansive';
+import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 
 const AboutUs = () => {
   const { language } = useLanguage();
@@ -43,15 +43,15 @@ const AboutUs = () => {
         {content[language].introduction}
       </motion.p>
 
-      <motion.h2 
+      {/* <motion.h2 
         className="text-2xl font-semibold text-center mb-10 text-gray-700"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
       >
         {content[language].subtitle}
-      </motion.h2>
-      <ExpandableCardDemo />
+      </motion.h2> */}
+      <AnimatedTestimonialsDemo />
     </div>
     
   );

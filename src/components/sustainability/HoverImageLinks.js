@@ -1,28 +1,64 @@
-import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
+import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
+import { useLanguage } from '../language/LanguageContext';
 import { FiArrowRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
+    const { language } = useLanguage();
+
+    const content = {
+        pt: {
+            title: 'Estudos de Caso e Pesquisas Relevantes',
+            link: {
+                heading: 'Nature',
+                subheading: 'The Role of Artificial Intelligence in Climate Change Mitigation',
+            },
+            link2: {
+                heading: 'FAO',
+                subheading: 'Artificial Intelligence for Climate Change Adaptation and Mitigation',
+            },
+            link3: {
+                heading: 'AI Magazine',
+                subheading: 'Harnessing Artificial Intelligence to Mitigate Global Climate Change',
+            },
+        },
+        en: {
+            title: 'Estudos de Caso e Pesquisas Relevantes in English',
+            link: {
+                heading: 'Nature',
+                subheading: 'The Role of Artificial Intelligence in Climate Change Mitigation',
+            },
+            link2: {
+                heading: 'FAO',
+                subheading: 'Artificial Intelligence for Climate Change Adaptation and Mitigation',
+            },
+            link3: {
+                heading: 'AI Magazine',
+                subheading: 'Harnessing Artificial Intelligence to Mitigate Global Climate Change',
+            },
+        },
+    };
+
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-white">Estudos de Caso e Pesquisas Relevantes</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-white">{content[language].title}</h1>
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="Nature"
-          subheading="The Role of Artificial Intelligence in Climate Change Mitigation"
-          imgSrc="/imgs/random/11.jpg"
+          heading={content[language].link.heading}
+          subheading={content[language].link.subheading}
+          imgSrc="/images/site1.png"
           href="#"
         />
         <Link
-          heading="FAO"
-          subheading="Artificial Intelligence for Climate Change Adaptation and Mitigation"
-          imgSrc="/imgs/random/6.jpg"
+          heading={content[language].link2.heading}
+          subheading={content[language].link2.subheading}
+          imgSrc="/images/site1.png"
           href="#"
         />
         <Link
-          heading="AI Magazine"
-          subheading="Harnessing Artificial Intelligence to Mitigate Global Climate Change"
-          imgSrc="/imgs/random/4.jpg"
+          heading={content[language].link3.heading}
+          subheading={content[language].link3.subheading}
+          imgSrc="/images/site1.png"
           href="#"
         />
       </div>
