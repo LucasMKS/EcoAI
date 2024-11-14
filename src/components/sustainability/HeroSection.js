@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../language/LanguageContext';
+import { Button } from "@/src/components/ui/button"
 
-export default function HeroSection() {
+export default function HeroSection({ onLearnMoreClick  }) {
   const { language } = useLanguage();
 
     const content = {
@@ -10,11 +11,13 @@ export default function HeroSection() {
             title: 'EcoAI - Inteligência Artificial para a Sustentabilidade',
             introduction: "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
             resume: "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado. Ao utilizar modelos de aprendizado de máquina, análise de dados e sistemas inteligentes, a IA permite a criação de abordagens proativas e otimizadas para o combate às alterações climáticas.",
-        },
+            button: "Saiba mais",
+          },
         en: {
           title: 'EcoAI - Inteligência Artificial para a Sustentabilidade',
           introduction: "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
           resume: "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado. Ao utilizar modelos de aprendizado de máquina, análise de dados e sistemas inteligentes, a IA permite a criação de abordagens proativas e otimizadas para o combate às alterações climáticas.",
+          button: "Learn more",
         },
     };
 
@@ -53,11 +56,18 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <h2 className="text-2xl font-semibold text-white">Learn more</h2>
             <p className="text-gray-400 max-w-lg">
             {content[language].resume}
             </p>
           </motion.div>
+          <motion.button 
+              onClick={onLearnMoreClick}
+              className="bg-[#90B290] hover:bg-[#7A997A] text-white px-6 py-3 rounded-full inline-flex items-center gap-2 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {content[language].button}
+            </motion.button>
         </motion.div>
 
         {/* Right content - Image with curved frame effect */}

@@ -23,7 +23,7 @@ export const HoverImageLinks = () => {
             },
         },
         en: {
-            title: 'Estudos de Caso e Pesquisas Relevantes in English',
+            title: 'Case Studies and Relevant Research',
             link: {
                 heading: 'Nature',
                 subheading: 'The Role of Artificial Intelligence in Climate Change Mitigation',
