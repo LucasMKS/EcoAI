@@ -10,37 +10,37 @@ const cards = [
     url: "https://www.unep.org/news-and-stories/story/how-artificial-intelligence-helping-tackle-environmental-challenges"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/earthOrg.png",
     title: "Can Machine Learning Help Tackle Climate Change?",
     description: "Otimizando o uso de recursos para um mundo melhor",
     url: "https://earth.org/machine-learning-climate-change/"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/unuEdu.png",
     title: "UNU Report: Don’t Dismiss the Great Power of AI for Climate Change Impact Assessment",
     description: "Transformando resíduos em oportunidades",
     url: "https://unu.edu/inweh/press-release/unu-report-dont-dismiss-great-power-ai-climate-change-impact-assessment"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/ClimateRoadmap.png",
     title: "Artificial Intelligence for Climate Change Mitigation Roadmap",
     description: "O documento 'Artificial Intelligence for Climate Change Mitigation Roadmap' (ICEF, dezembro de 2023) explora o potencial da Inteligência Artificial (IA) para reduzir as emissões de gases de efeito estufa (GEE) e apoiar o combate às mudanças climáticas.",
     url: "/pdfs/AI-ClimateRoadmapICEF.pdf"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/KaackAligning.png",
     title: "Aligning artificial intelligence with climate change mitigation",
     description: "O documento 'Aligning Artificial Intelligence with Climate Change Mitigation' (Kaack et al., 2021) propõe um modelo para analisar o impacto da Inteligência Artificial (IA) na mitigação das mudanças climáticas.",
     url: "/pdfs/Kaack_2021_Aligning.pdf"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/AI-based.png",
     title: "Artifcial intelligence‑based solutions for climate change: a review",
     description: "O documento 'Artificial intelligence-based solutions for climate change: a review' (2023) discute o papel da Inteligência Artificial (IA) em mitigar os efeitos das mudanças climáticas, abordando várias áreas principais.",
     url: "/pdfs/AI-based-Solutions-for-Climate-Change.pdf"
   },
   {
-    imgSrc: "https://picsum.photos/1000/800",
+    imgSrc: "/images/carousel/HarnessingPowerAI.png",
     title: "Harnessing the Power of AI for Climate Change Impact Assessment",
     description: "Cultivando um amanhã mais verde",
     url: "/pdfs/Harnessing_the_Power_of_AI__Obringer__2024_.pdf"
