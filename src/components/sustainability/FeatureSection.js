@@ -1,6 +1,5 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-import HeroVideoDialog from "../ui/hero-video-dialog";
 import { useLanguage } from '../language/LanguageContext';
 
 export default function FeatureSection() {
@@ -97,19 +96,29 @@ export default function FeatureSection() {
                 </div>
             </div>
             <p className="text-3xl font-bold mt-12 text-center text-neutral-950"> VIDEOS </p>
-            <div className="mt-12 bg-neutral-900 p-6 rounded-lg shadow-md w-5/6 flex items-center justify-center gap-4 mx-auto">
-                <HeroVideoDialog
-                    animationStyle="from-center"
-                    videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-                    thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
-                    thumbnailAlt="Hero Video"
-                />
-                <HeroVideoDialog
-                    animationStyle="from-center"
-                    videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-                    thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
-                    thumbnailAlt="Hero Video"
-                />
+            <div className="mt-12 bg-neutral-900 p-6 rounded-lg w-3/5 flex items-center justify-center gap-4 mx-auto shadow-lg shadow-neutral-800">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/RNhbqQefPSg?si=15CcNPV7ReX59sZw"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/OskYAE3P9oI?si=_TR_oqGug948N48L"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
+
             </div>
         </div>
     )

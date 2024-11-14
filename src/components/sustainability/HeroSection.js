@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../language/LanguageContext';
-import { Button } from "@/src/components/ui/button"
 
 export default function HeroSection({ onLearnMoreClick  }) {
   const { language } = useLanguage();

@@ -4,62 +4,62 @@ import { useLanguage } from '../language/LanguageContext';
 import { FiArrowRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
-    const { language } = useLanguage();
+  const { language } = useLanguage();
 
-    const content = {
-        pt: {
-            title: 'Estudos de Caso e Pesquisas Relevantes',
-            link: {
-                heading: 'Nature',
-                subheading: 'The Role of Artificial Intelligence in Climate Change Mitigation',
-            },
-            link2: {
-                heading: 'FAO',
-                subheading: 'Artificial Intelligence for Climate Change Adaptation and Mitigation',
-            },
-            link3: {
-                heading: 'AI Magazine',
-                subheading: 'Harnessing Artificial Intelligence to Mitigate Global Climate Change',
-            },
-        },
-        en: {
-            title: 'Case Studies and Relevant Research',
-            link: {
-                heading: 'Nature',
-                subheading: 'The Role of Artificial Intelligence in Climate Change Mitigation',
-            },
-            link2: {
-                heading: 'FAO',
-                subheading: 'Artificial Intelligence for Climate Change Adaptation and Mitigation',
-            },
-            link3: {
-                heading: 'AI Magazine',
-                subheading: 'Harnessing Artificial Intelligence to Mitigate Global Climate Change',
-            },
-        },
-    };
+  const content = {
+    pt: {
+      title: 'Fontes relevantes para pesquisa',
+      link: {
+        heading: 'UNU',
+        subheading: 'Universidade das Nações Unidas',
+      },
+      link2: {
+        heading: 'NATURE',
+        subheading: 'Nature é a principal revista científica multidisciplinar do mundo',
+      },
+      link3: {
+        heading: 'EARTH.ORG',
+        subheading: 'Um site de notícias ambientais que tem como objetivo ilustrar as repercussões das mudanças climáticas sobre os seres humanos e o meio ambiente por meio do jornalismo de dados.',
+      },
+    },
+    en: {
+      title: 'Relevant sources for research',
+      link: {
+        heading: 'UNU',
+        subheading: 'United Nations University',
+      },
+      link2: {
+        heading: 'NATURE',
+        subheading: "Nature is the world's leading multidisciplinary science journal",
+      },
+      link3: {
+        heading: 'EARTH.ORG',
+        subheading: 'an environmental news website that aims to illustrate the repercussions of climate change on the humans and the environment with power data journalism.',
+      },
+    },
+  };
 
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-white">{content[language].title}</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-white">{content[language].title}</h1>
       <div className="mx-auto max-w-5xl">
         <Link
           heading={content[language].link.heading}
           subheading={content[language].link.subheading}
-          imgSrc="/images/site1.png"
-          href="#"
+          imgSrc="https://unu.edu/sites/default/files/styles/content_width/public/2024-08/renee-featured-image.webp?itok=q80T8IXL"
+          href="https://unu.edu/topics/climate-change"
         />
         <Link
           heading={content[language].link2.heading}
           subheading={content[language].link2.subheading}
-          imgSrc="/images/site1.png"
-          href="#"
+          imgSrc="https://media.springernature.com/w440/springer-static/cover-hires/journal/41558/14/11?q=95"
+          href="https://www.nature.com/nclimate/"
         />
         <Link
           heading={content[language].link3.heading}
           subheading={content[language].link3.subheading}
-          imgSrc="/images/site1.png"
-          href="#"
+          imgSrc="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2024/11/Copy-of-Untitled-683-x-1024-px-72.jpg"
+          href="https://earth.org/climate-change/"
         />
       </div>
     </section>
@@ -102,6 +102,8 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       initial="initial"
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div>
         <motion.span

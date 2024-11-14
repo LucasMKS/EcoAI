@@ -4,46 +4,46 @@ import Link from 'next/link';
 
 const cards = [
   {
-    imgSrc: "/images/site1.png",
+    imgSrc: "/images/carousel/unep.png",
     title: "Climate Action",
     description: "How artificial intelligence is helping tackle environmental challenges",
     url: "https://www.unep.org/news-and-stories/story/how-artificial-intelligence-helping-tackle-environmental-challenges"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Eficiência Energética",
+    title: "Can Machine Learning Help Tackle Climate Change?",
     description: "Otimizando o uso de recursos para um mundo melhor",
-    url: "/eficiencia-energetica"
+    url: "https://earth.org/machine-learning-climate-change/"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Gestão de Resíduos",
+    title: "UNU Report: Don’t Dismiss the Great Power of AI for Climate Change Impact Assessment",
     description: "Transformando resíduos em oportunidades",
-    url: "/gestao-residuos"
+    url: "https://unu.edu/inweh/press-release/unu-report-dont-dismiss-great-power-ai-climate-change-impact-assessment"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Conservação da Água",
-    description: "Preservando nosso recurso mais precioso",
-    url: "/conservacao-agua"
+    title: "Artificial Intelligence for Climate Change Mitigation Roadmap",
+    description: "O documento 'Artificial Intelligence for Climate Change Mitigation Roadmap' (ICEF, dezembro de 2023) explora o potencial da Inteligência Artificial (IA) para reduzir as emissões de gases de efeito estufa (GEE) e apoiar o combate às mudanças climáticas.",
+    url: "/pdfs/AI-ClimateRoadmapICEF.pdf"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Construção Verde",
-    description: "Edificando um futuro sustentável",
-    url: "/construcao-verde"
+    title: "Aligning artificial intelligence with climate change mitigation",
+    description: "O documento 'Aligning Artificial Intelligence with Climate Change Mitigation' (Kaack et al., 2021) propõe um modelo para analisar o impacto da Inteligência Artificial (IA) na mitigação das mudanças climáticas.",
+    url: "/pdfs/Kaack_2021_Aligning.pdf"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Mobilidade Sustentável",
-    description: "Movendo-se em harmonia com o planeta",
-    url: "/mobilidade-sustentavel"
+    title: "Artifcial intelligence‑based solutions for climate change: a review",
+    description: "O documento 'Artificial intelligence-based solutions for climate change: a review' (2023) discute o papel da Inteligência Artificial (IA) em mitigar os efeitos das mudanças climáticas, abordando várias áreas principais.",
+    url: "/pdfs/AI-based-Solutions-for-Climate-Change.pdf"
   },
   {
     imgSrc: "https://picsum.photos/1000/800",
-    title: "Agricultura Sustentável",
+    title: "Harnessing the Power of AI for Climate Change Impact Assessment",
     description: "Cultivando um amanhã mais verde",
-    url: "/agricultura-sustentavel"
+    url: "/pdfs/Harnessing_the_Power_of_AI__Obringer__2024_.pdf"
   },
 ];
 
@@ -97,7 +97,7 @@ export const SwipeCarousel = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Mais artigos
+          More articles
         </motion.h2>
 
       <motion.div
