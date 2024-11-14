@@ -74,6 +74,8 @@ export default function FeatureSection() {
                     thumbnailAlt="Hero Video"
                 />
             </div>
+            
         </div>
+        
     )
 }
