@@ -31,14 +31,14 @@ const features = [
 
 export default function FeatureSection() {
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-green-100 py-24 sm:py-32 border-b-4 border-neutral-600 shadow-lg shadow-neutral-700 drop-shadow-xl ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
                     <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
                         Benefícios da IA no Contexto Climático
                     </p>
-                    <p className="mt-6 text-lg/8 text-gray-600">
+                    <p className="mt-6 text-lg/8 text-neutral-800">
                         Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
                         pulvinar et feugiat blandit at. In mi viverra elit nunc.
                     </p>
@@ -53,7 +53,7 @@ export default function FeatureSection() {
                                     </div>
                                     {feature.name}
                                 </dt>
-                                <dd className="mt-2 text-base/7 text-gray-600">{feature.description}</dd>
+                                <dd className="mt-2 text-base/7 text-neutral-800">{feature.description}</dd>
                             </div>
                         ))}
                     </dl>
