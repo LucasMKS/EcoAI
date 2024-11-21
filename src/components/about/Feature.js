@@ -9,16 +9,16 @@ const Hero = () => {
         pt: {
             tec: 'Tecnologias usadas',
             title1: 'Sobre o Projeto',
-            text1: 'Bem-vindo à nossa página "Sobre"! Este projeto foi concebido com o objetivo de [descrever brevemente o objetivo do projeto, como "promover a cultura musical" ou "facilitar o acesso a informações sobre artistas"]. Em um mundo cada vez mais digital, acreditamos que é essencial conectar as pessoas com as histórias e a arte que moldam a nossa cultura.',
+            text1: 'Este projeto tem como objetivo utilizar os conhecimentos desenvolvidos na Unidade Curricular Inglês Instrumental e Pensamento Digital para a construção de um Website, em inglês, acerca de uma ou diversas das temáticas relacionadas à tecnologia digital, conectando com o Tema Gerador do Semestre 2024.2 "Terra, Nossa Casa" e "Cuidando do Planeta, Cuidando de Nós".',
             title2: 'O Que é Este Projeto?',
-            text2: 'Este projeto é uma plataforma dedicada a [explicar o que o projeto oferece, como "explorar a música e as biografias de artistas de diferentes gêneros e épocas"]. Nosso objetivo é criar um espaço onde os usuários possam não apenas descobrir novas músicas, mas também entender o contexto cultural e pessoal que envolve cada artista. Acreditamos que cada canção conta uma história e queremos compartilhar essas narrativas com o mundo.',
+            text2: 'Este projeto reúne artigos e informações sobre como a Inteligência Artificial (IA) pode ser aplicada para combater as mudanças climáticas. Ele explora como a IA pode melhorar a eficiência energética, otimizar redes de energia, prever fenômenos climáticos extremos e monitorar o meio ambiente. O objetivo é compartilhar conhecimentos sobre as soluções tecnológicas disponíveis para mitigar os impactos das mudanças climáticas e promover um futuro mais sustentável.',
         },
         en: {
             tec: 'Technologies Used',
             title1: 'About Project',
-            text1: 'Welcome to our "About" page! This project was conceived with the goal of [briefly describing the project\'s objective, such as "promoting musical culture" or "facilitating access to information about artists"]. In an increasingly digital world, we believe it is essential to connect people with the stories and art that shape our culture.',
+            text1: 'This project aims to use the knowledge developed in the "Instrumental English" and "Digital Thinking" courses to build a website, in English, on one or more topics related to digital technology. It connects with the 2024.2 Semester"s Generating Theme "Earth, Our Home" and "Taking Care of the Planet, Taking Care of Ourselves.".',
             title2: 'What is This Project?',
-            text2: 'This project is a platform dedicated to [explain what the project offers, such as "exploring music and artist biographies from different genres and eras"]. Our goal is to create a space where users can not only discover new music, but also understand the cultural and personal context that surrounds each artist. We believe that each song tells a story and we want to share these narratives with the world.',
+            text2: 'This project gathers articles and information on how Artificial Intelligence (AI) can be applied to combat climate change. It explores how AI can improve energy efficiency, optimize energy grids, predict extreme weather events, and monitor the environment. The goal is to share knowledge about the technological solutions available to mitigate the impacts of climate change and promote a more sustainable future.',
         },
     };
 
