@@ -1,10 +1,8 @@
 import Navbar from '../components/Navbar';
 import "./globals.css";
 import { LanguageProvider } from '../components/language/LanguageContext';
-import { Toaster } from "@/src/components/ui/toaster"
-import { PersistentToast } from '../components/PersistentToast'
 import Footer from '../components/FooterPage';
-import { Inter, Roboto, Alkatra, Roboto_Condensed, Montserrat, Bebas_Neue } from 'next/font/google';
+import { Inter, Roboto, Alkatra, Roboto_Condensed } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -44,8 +42,6 @@ export default async function RootLayout({ children }) {
             {children}
             <div className="bg-neutral-900"><Footer /> </div>
           </main>
-          <Toaster />
-          <PersistentToast />
         </LanguageProvider>
       </body>
     </html>

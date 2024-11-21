@@ -9,7 +9,7 @@ export function PersistentToast() {
   useEffect(() => {
     toast({
       title: "Aviso",
-      description: "Imagens e textos meramente ilustrativos",
+      description: "Algumas imagens e textos são meramente ilustrativos",
       duration: Infinity,
     })
   }, [])
