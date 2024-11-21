@@ -8,7 +8,7 @@ export default function FeatureSection() {
     const features = {
         pt: {
             title: 'Benefícios da IA no Contexto Climático',
-            resume: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+            resume: "Abaixo, destacamos os principais benefícios que ilustram como a IA pode promover um futuro mais sustentável e resiliente.",
             features: [
                 {
                     name: 'Análise de dados complexos',
@@ -38,7 +38,7 @@ export default function FeatureSection() {
         },
         en: {
             title: 'Benefits of AI in the Climate Context',
-            resume: "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+            resume: "Below, we highlight key benefits that showcase how AI can foster a more sustainable and resilient future.",
             features: [
                 {
                     name: 'Complex data analysis',
