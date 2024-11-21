@@ -113,9 +113,9 @@ const BlogArticles = () => {
                 <div className="max-w-2xl">
                     <div className="space-y-5 md:space-y-8">
                         <div className="space-y-3">
-                            <h2 className="text-2xl font-bold md:text-3xl dark:text-white">{content[language].title}</h2>
+                            <h2 className="text-2xl font-bold md:text-3xl font-roboto">{content[language].title}</h2>
 
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].resume}</p>
+                            <p className="text-lg text-neutral-700 ">{content[language].resume}</p>
                         </div>
 
                         <figure>
@@ -123,59 +123,59 @@ const BlogArticles = () => {
                         </figure>
 
                         <div className="space-y-3" ref={sectionRefs.EnergyEfficiency} id="EnergyEfficiency">
-                            <h3 className="text-2xl font-semibold dark:text-white">{content[language].text.title}</h3>
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text.t1}</p>
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text.t2}</p>
+                            <h3 className="text-2xl font-semibold font-roboto">{content[language].text.title}</h3>
+                            <p className="text-lg text-neutral-700 ">{content[language].text.t1}</p>
+                            <p className="text-lg text-neutral-700 ">{content[language].text.t2}</p>
                         </div>
                         
                         <figure>
                             <img src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
-                            <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                            <figcaption className="mt-3 text-sm text-center text-neutral-500 font-robotoCondensed">
                                 A man and a woman looking at a cell phone.
                             </figcaption>
                         </figure>
 
                         <div className="space-y-3" ref={sectionRefs.ClimateForecasting} id="ClimateForecasting">
-                            <h3 className="text-2xl font-semibold dark:text-white">{content[language].text2.title}</h3>
+                            <h3 className="text-2xl font-semibold font-roboto">{content[language].text2.title}</h3>
 
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text2.t1}</p>
+                            <p className="text-lg text-neutral-700 ">{content[language].text2.t1}</p>
                         </div>
 
-                        <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text2.t2}</p>
+                        <p className="text-lg text-neutral-700 ">{content[language].text2.t2}</p>
 
                         <blockquote className="text-center p-4 sm:px-7">
-                            <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+                            <p className="text-xl font-light text-neutral-700 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal font-roboto">
                                 {content[language].quote.text}
                             </p>
-                            <p className="mt-5 text-gray-800 dark:text-neutral-200">
+                            <p className="mt-5 text-neutral-700 font-robotoCondensed">
                                 {content[language].quote.person}
                             </p>
                         </blockquote>
 
                         <div className="space-y-3" ref={sectionRefs.ClimateChangeMonitoring} id="ClimateChangeMonitoring">
-                            <h3 className="text-2xl font-semibold dark:text-white">{content[language].text3.title}</h3>
+                            <h3 className="text-2xl font-semibold font-roboto">{content[language].text3.title}</h3>
 
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text3.t1}</p>
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text3.t2}</p>
+                            <p className="text-lg text-neutral-700">{content[language].text3.t1}</p>
+                            <p className="text-lg text-neutral-700">{content[language].text3.t2}</p>
                         </div>
 
                         <figure>
                             <img src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
-                            <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                            <figcaption className="mt-3 text-sm text-center text-neutral-500 font-robotoCondensed">
                                 A man and a woman looking at a cell phone.
                             </figcaption>
                         </figure>
 
                         <div className="space-y-3">
-                            <h3 className="text-2xl font-semibold dark:text-white">{content[language].text4.title}</h3>
+                            <h3 className="text-2xl font-semibold font-roboto">{content[language].text4.title}</h3>
 
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text4.t1}</p>
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].text4.t2}</p>
+                            <p className="text-lg text-neutral-700 ">{content[language].text4.t1}</p>
+                            <p className="text-lg text-neutral-700">{content[language].text4.t2}</p>
                         </div>
 
                         <div className="space-y-3">
-                            <p className="text-2xl font-semibold dark:text-neutral-200">{content[language].conclusion.title}</p>
-                            <p className="text-lg text-gray-800 dark:text-neutral-200">{content[language].conclusion.text}</p>
+                            <p className="text-2xl font-semibold font-roboto">{content[language].conclusion.title}</p>
+                            <p className="text-lg text-neutral-700">{content[language].conclusion.text}</p>
                         </div>
 
                     </div>

@@ -76,7 +76,13 @@ module.exports = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+		fontFamily: {
+			roboto: ["var(--font-roboto)", "sans-serif"],
+			inter: ["var(--font-inter)", "sans-serif"],
+			alkatra: ["var(--font-alkatra)", "sans-serif"],
+			robotoCondensed: ["var(--font-roboto_Condensed)", "sans-serif"],
+		},
   	}
   },
   plugins: [

@@ -9,13 +9,13 @@ export default function HeroSection({ onLearnMoreClick  }) {
         pt: {
             title: 'EcoAI - Inteligência Artificial para a Sustentabilidade',
             introduction: "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
-            resume: "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado. Ao utilizar modelos de aprendizado de máquina, análise de dados e sistemas inteligentes, a IA permite a criação de abordagens proativas e otimizadas para o combate às alterações climáticas.",
+            resume: "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado.",
             button: "Saiba mais",
           },
         en: {
-          title: 'EcoAI - Inteligência Artificial para a Sustentabilidade',
-          introduction: "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
-          resume: "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado. Ao utilizar modelos de aprendizado de máquina, análise de dados e sistemas inteligentes, a IA permite a criação de abordagens proativas e otimizadas para o combate às alterações climáticas.",
+          title: 'EcoAI - Artificial Intelligence for Sustainability',
+          introduction: "AI has great potential to assist in climate change mitigation efforts across various areas. However, it is important to carefully consider its impacts and limitations, seeking a responsible and effective application of these technologies.",
+          resume: "In light of the climate crisis, AI can be used as a powerful tool to develop innovative solutions that help mitigate the effects of climate change. This project explores how AI can be applied in different scenarios to monitor, predict, and reduce the impacts of human activities on the environment, contributing to a more sustainable and balanced planet.",
           button: "Learn more",
         },
     };
@@ -32,7 +32,7 @@ export default function HeroSection({ onLearnMoreClick  }) {
         >
           <div className="space-y-6">
             <motion.h1 
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold font-roboto text-white leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -40,7 +40,7 @@ export default function HeroSection({ onLearnMoreClick  }) {
               {content[language].title}
             </motion.h1>
             <motion.p 
-              className="text-gray-400 text-lg max-w-lg"
+              className="text-neutral-300 text-lg max-w-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -55,7 +55,7 @@ export default function HeroSection({ onLearnMoreClick  }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <p className="text-gray-400 max-w-lg">
+            <p className="text-neutral-300 text-lg max-w-lg">
             {content[language].resume}
             </p>
           </motion.div>

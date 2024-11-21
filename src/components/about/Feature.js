@@ -25,17 +25,17 @@ const Hero = () => {
     return (
         <div className="hero bg-background pt-12">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center font-robotoCondensed text-neutral-100">
                     <h2 className="text-2xl font-semibold">{content[language].tec}</h2>
                     <DivOrigami className="max-w-sm rounded-lg shadow-2xl" />
                 </div>
                 <div className="p-6">
-                    <h1 className="text-5xl font-bold">{content[language].title1}</h1>
-                    <p className="py-8 pb-12">
+                    <h1 className="text-5xl font-bold font-robotoCondensed text-neutral-100">{content[language].title1}</h1>
+                    <p className="py-8 font-inter text-lg text-neutral-300">
                     {content[language].text1}
                     </p>
-                    <h1 className="text-5xl font-bold">{content[language].title2}</h1>
-                    <p className="py-8">
+                    <h1 className="text-5xl font-bold font-robotoCondensed text-neutral-100">{content[language].title2}</h1>
+                    <p className="py-8 font-inter text-lg text-neutral-300">
                     {content[language].text2}
                     </p>
                 </div>

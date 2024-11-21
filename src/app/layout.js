@@ -1,22 +1,34 @@
-import localFont from "next/font/local";
 import Navbar from '../components/Navbar';
 import "./globals.css";
 import { LanguageProvider } from '../components/language/LanguageContext';
 import { Toaster } from "@/src/components/ui/toaster"
 import { PersistentToast } from '../components/PersistentToast'
 import Footer from '../components/FooterPage';
+import { Inter, Roboto, Alkatra, Roboto_Condensed, Montserrat, Bebas_Neue } from 'next/font/google';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['300', '400', '700'],
 });
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  weight: ['300', '400', '700'],
+});
+
+const alkatra = Alkatra({
+  subsets: ['latin'],
+  variable: '--font-alkatra',
+  weight: '500',
+});
+
+const roboto_Condensed = Roboto_Condensed({
+  subsets: ['latin'],
+  variable: '--font-roboto_Condensed',
+  weight: ['300', '400', '700'],
+});
 export const metadata = {
   title: "Sustentabilidade Inteligente",
   description: "Sustentabilidade Inteligente",
@@ -25,7 +37,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.variable} ${roboto.variable} ${alkatra.variable} ${roboto_Condensed.variable}`}>
         <LanguageProvider>
           <Navbar />
           <main >

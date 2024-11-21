@@ -96,10 +96,9 @@ export default function FeatureSection() {
                 </div>
             </div>
             <p className="text-3xl font-bold mt-12 text-center text-neutral-950"> VIDEOS </p>
-            <div className="mt-12 bg-neutral-900 p-6 rounded-lg w-3/5 flex items-center justify-center gap-4 mx-auto shadow-lg shadow-neutral-800">
+            <div className="mt-12 bg-neutral-900 p-6 rounded-lg justify-center  flex flex-col items-center gap-4 mx-auto shadow-lg shadow-neutral-800  w-full sm:w-5/6 md:flex-row lg:w-4/5 xl:w-2/3">
                 <iframe
-                    width="560"
-                    height="315"
+                    className="w-full sm:w-3/5 lg:w-[600px] h-44 sm:h-56 lg:h-[315px]"
                     src="https://www.youtube.com/embed/RNhbqQefPSg?si=15CcNPV7ReX59sZw"
                     title="YouTube video player"
                     frameBorder="0"
@@ -109,8 +108,7 @@ export default function FeatureSection() {
                 ></iframe>
 
                 <iframe
-                    width="560"
-                    height="315"
+                    className="w-full sm:w-3/5 lg:w-[600px] h-44 sm:h-56 lg:h-[315px]"
                     src="https://www.youtube.com/embed/OskYAE3P9oI?si=_TR_oqGug948N48L"
                     title="YouTube video player"
                     frameBorder="0"
@@ -118,7 +116,6 @@ export default function FeatureSection() {
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                 ></iframe>
-
             </div>
         </div>
     )

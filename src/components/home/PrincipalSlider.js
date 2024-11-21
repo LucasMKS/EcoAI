@@ -19,13 +19,13 @@ export function ImagesSliderDemo() {
     pt: {
       title: 'EcoAI',
       subtitle: 'Inteligência Artificial e Sustentabilidade',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet ac sem id lobortis. Nam ut nulla lobortis, bibendum odio in, varius lacus. Phasellus sit amet ligula magna. Duis ut eros non orci mollis dignissim. Nunc quis odio id augue commodo maximus sit amet ut lorem. Suspendisse et ex at est auctor placerat. Suspendisse hendrerit mauris in risus rhoncus pharetra. Maecenas enim elit, efficitur quis nibh nec, convallis blandit libero. Etiam pharetra ante ut ipsum egestas, vel consectetur ante fringilla. Aliquam quis magna eu massa dapibus euismod. Vestibulum commodo nulla velit, vel feugiat lorem tristique id.',
+      text: 'A inteligência artificial é uma área da tecnologia que se destaca pela capacidade de desenvolver sistemas que simulam a inteligência humana, realizando tarefas complexas como reconhecimento de padrões, aprendizado com dados e automação de processos. A IA tem um papel crucial na mitigação das mudanças climáticas, pois possibilita uma abordagem baseada em dados para monitoramento e controle ambiental.',
       button: 'Saiba mais',
     },
     en: {
       title: 'EcoAI',
       subtitle: 'Artificial Intelligence and Sustainability',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet ac sem id lobortis. Nam ut nulla lobortis, bibendum odio in, varius lacus. Phasellus sit amet ligula magna. Duis ut eros non orci mollis dignissim. Nunc quis odio id augue commodo maximus sit amet ut lorem. Suspendisse et ex at est auctor placerat. Suspendisse hendrerit mauris in risus rhoncus pharetra. Maecenas enim elit, efficitur quis nibh nec, convallis blandit libero. Etiam pharetra ante ut ipsum egestas, vel consectetur ante fringilla. Aliquam quis magna eu massa dapibus euismod. Vestibulum commodo nulla velit, vel feugiat lorem tristique id.',
+      text: 'Artificial intelligence is a field of technology renowned for its ability to develop systems that simulate human intelligence, performing complex tasks such as pattern recognition, data-driven learning, and process automation. AI plays a critical role in mitigating climate change by enabling a data-driven approach to environmental monitoring and control.',
       button: 'Learn more',
     },
   };
@@ -46,16 +46,16 @@ export function ImagesSliderDemo() {
         }}
         className="z-50 flex flex-col justify-center items-center">
         <motion.p
-          className="font-bold text-5xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          className="font-bold text-5xl md:text-7xl text-center font-alkatra py-4">
           <span className="text-green-800">Eco</span>
           <span className="text-green-600">AI</span>
         </motion.p>
         <motion.p
-          className="font-bold text-xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pt-4 pb-8">
+          className="font-bold text-xl md:text-5xl text-center text-neutral-200  pt-4 pb-8">
           {heroItems[language].subtitle}
         </motion.p>
         <motion.p
-          className="text-lg md:text-xl text-gray-300 max-w-5xl mx-6 lg:mx-0"
+          className="text-lg md:text-xl text-neutral-400 max-w-5xl mx-6 lg:mx-0 font-inter text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -63,7 +63,7 @@ export function ImagesSliderDemo() {
           {heroItems[language].text}
         </motion.p>
         <button
-          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4 ">
           <span>{heroItems[language].button} →</span>
           <div
             className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />

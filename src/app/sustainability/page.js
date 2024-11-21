@@ -16,7 +16,7 @@ export default function Sustainability() {
 
   return (
     <div className="min-h-screen bg-green-50">
-      <main className="pt-20">
+      <main className="pt-20 font-inter ">
         <HeroSection onLearnMoreClick={scrollToBlogArticles} />
         <div ref={blogArticlesRef}>
           <BlogArticles />
