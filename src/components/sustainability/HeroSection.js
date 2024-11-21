@@ -82,8 +82,8 @@ export default function HeroSection({ onLearnMoreClick  }) {
             
             {/* Main image */}
             <img
-              src="https://picsum.photos/1200/900"
-              alt="Laptop mostrando dashboard de sustentabilidade"
+              src="/images/ecoAI.jpeg"
+              alt="Artificial Intelligence for Sustainability Image"
               className="w-full h-full object-cover"
             />
 

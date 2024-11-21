@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Leaf, Zap, Recycle } from 'lucide-react';
+import { Leaf, Zap, Recycle, Brain, Sun,  } from 'lucide-react';
 import { useLanguage } from '../language/LanguageContext';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
@@ -20,16 +20,16 @@ export default function GreenSection() {
       heading: 'Inteligência Artificial na Mitigação das Mudanças Climáticas',
       solutions: [
         {
-          title: "Monitoramento Ambiental em Tempo Real",
-          description: "Implementamos soluções de energia solar e eólica para reduzir a dependência de combustíveis fósseis."
+          title: "Previsão Climática e Gestão de Emergências",
+          description: "IA melhora previsões climáticas, monitora emissões em tempo real e auxilia políticas públicas com análises preditivas e dados precisos."
         },
         {
-          title: "Otimização de Energia Renovável",
-          description: "Otimizamos o consumo de energia em edifícios e processos industriais, reduzindo custos e emissões."
+          title: "Eficiência Energética e Gestão de Redes Elétricas",
+          description: "IA otimiza consumo energético, prevê demandas, integra renováveis e reduz custos em 20% com redes inteligentes, promovendo sustentabilidade."
         },
         {
-          title: "Gestão Inteligente de Resíduos",
-          description: "Desenvolvemos estratégias de reciclagem e reutilização para minimizar o impacto ambiental."
+          title: "Monitoramento das Mudanças Climáticas",
+          description: "IA processa grandes dados climáticos, detecta desmatamentos em tempo real e apoia políticas ambientais com análises rápidas e detalhadas."
         },
       ],
       exploreButton: "Explore Todas as Soluções"
@@ -38,16 +38,16 @@ export default function GreenSection() {
       heading: 'Artificial Intelligence in Climate Change Mitigation',
       solutions: [
         {
-          title: "Real-Time Environmental Monitoring",
-          description: "We implement solar and wind energy solutions to reduce dependence on fossil fuels."
+          title: "Climate Forecasting and Emergency Management",
+          description: "AI enhances climate predictions, monitors emissions in real time, and supports public policies with predictive analysis and accurate data."
         },
         {
-          title: "Renewable Energy Optimization",
-          description: "We optimize energy consumption in buildings and industrial processes, reducing costs and emissions."
+          title: "Energy Efficiency and Grid Management",
+          description: "AI optimizes energy consumption, predicts demand, integrates renewables, and reduces costs by 20% with smart grids, fostering sustainability."
         },
         {
-          title: "Intelligent Waste Management",
-          description: "We develop recycling and reuse strategies to minimize environmental impact."
+          title: "Climate Change Monitoring",
+          description: "AI processes large climate datasets, detects deforestation in real time, and supports environmental policies with fast, detailed analyses."
         },
       ],
       exploreButton: "Explore All Solutions"
@@ -66,7 +66,7 @@ export default function GreenSection() {
           {solutions.map((solution, index) => (
             <FeatureCard
               key={index}
-              icon={index === 0 ? Leaf : index === 1 ? Zap : Recycle}
+              icon={index === 0 ? Brain : index === 1 ? Zap : Sun}
               title={solution.title}
               description={solution.description}
             />
