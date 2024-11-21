@@ -6,7 +6,7 @@ export function AnimatedTestimonialsDemo() {
 
   const content = {
     pt: {
-      quote: 'Sobre Nós',
+      quote: 'Sou um profissional entusiasmado e aprendiz diligente, procurando explorar e expandir conhecimentos em novos campos. Mesmo sem experiência de trabalho significativa, possuo grande vontade, adaptabilidade e motivação para aprender.',
       name: 'Gabriel Silva Galdino',
       designation: 'Product Manager at TechFlow.',
       src: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -16,7 +16,7 @@ export function AnimatedTestimonialsDemo() {
       src1: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     en: {
-      quote: 'About Us',
+      quote: 'I am an enthusiastic professional and diligent learner, seeking to explore and expand knowledge in new fields. Even without significant work experience, I possess a strong desire, adaptability, and motivation to learn.',
       name: 'Gabriel Silva Galdino',
       designation: 'Computer Science - UNA Contagem',
       src: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
