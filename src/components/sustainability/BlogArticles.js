@@ -119,7 +119,7 @@ const BlogArticles = () => {
                         </div>
 
                         <figure>
-                            <img src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
+                            <img src="/images/climateChange.jpg" alt="Climate Change Image" />
                         </figure>
 
                         <div className="space-y-3" ref={sectionRefs.EnergyEfficiency} id="EnergyEfficiency">
@@ -129,10 +129,7 @@ const BlogArticles = () => {
                         </div>
                         
                         <figure>
-                            <img src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
-                            <figcaption className="mt-3 text-sm text-center text-neutral-500 font-robotoCondensed">
-                                A man and a woman looking at a cell phone.
-                            </figcaption>
+                            <img src="/images/EFFICIENT.jpg" alt="Energy Efficiency Image" />
                         </figure>
 
                         <div className="space-y-3" ref={sectionRefs.ClimateForecasting} id="ClimateForecasting">
@@ -160,10 +157,7 @@ const BlogArticles = () => {
                         </div>
 
                         <figure>
-                            <img src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image" />
-                            <figcaption className="mt-3 text-sm text-center text-neutral-500 font-robotoCondensed">
-                                A man and a woman looking at a cell phone.
-                            </figcaption>
+                            <img src="/images/emission.webp" alt="Climate Change Monitoring Image" />
                         </figure>
 
                         <div className="space-y-3">
