@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Leaf, Zap, Recycle, Brain, Sun,  } from 'lucide-react';
+import { Zap, Brain, Sun } from 'lucide-react';
 import { useLanguage } from '../language/LanguageContext';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
