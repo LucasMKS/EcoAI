@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import Image from "next/image";
-import { Menu, X, Edit, PlusSquare, Share, Trash, ChevronDown } from 'lucide-react';
+import { Edit, PlusSquare, Share, Menu } from 'lucide-react';
 import Link from 'next/link';
 import LanguageSwitcher from '../components/language/LanguageSwitcher';
 import { useLanguage } from '../components/language/LanguageContext';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const NavButton = ({ href, children, onClick }) => {
   return (
@@ -40,7 +40,7 @@ const StaggeredDropDown = ({ language }) => {
       >
         <span className="font-medium text-sm">{dropdownItems[language].postActions}</span>
         <motion.span variants={iconVariants}>
-          <ChevronDown size={16} />
+           <Menu size={16} />
         </motion.span>
       </button>
 

@@ -16,7 +16,7 @@ const Hero = () => {
         en: {
             tec: 'Technologies Used',
             title1: 'About Project',
-            text1: 'This project aims to use the knowledge developed in the "Instrumental English" and "Digital Thinking" courses to build a website, in English, on one or more topics related to digital technology. It connects with the 2024.2 Semester"s Generating Theme "Earth, Our Home" and "Taking Care of the Planet, Taking Care of Ourselves.".',
+            text1: "This project aims to use the knowledge developed in the Instrumental English and Digital Thinking courses to build a website, in English, on one or more topics related to digital technology. It connects with the 2024.2 Semester's Generating Theme 'Earth, Our Home' and 'Taking Care of the Planet, Taking Care of Ourselves.'.",
             title2: 'What is This Project?',
             text2: 'This project gathers articles and information on how Artificial Intelligence (AI) can be applied to combat climate change. It explores how AI can improve energy efficiency, optimize energy grids, predict extreme weather events, and monitor the environment. The goal is to share knowledge about the technological solutions available to mitigate the impacts of climate change and promote a more sustainable future.',
         },

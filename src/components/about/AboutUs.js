@@ -12,13 +12,13 @@ const AboutUs = () => {
     pt: {
       title: 'Sobre Nós',
       subtitle: 'Conheça Nossa Equipe',
-      introduction: 'Nossa equipe é formada por estudantes apaixonados por tecnologia e sustentabilidade. Nosso objetivo é desenvolver soluções inovadoras que promovam um futuro mais verde e consciente.',
+      introduction: 'Nossa equipe é formada por estudantes apaixonados por tecnologia e sustentabilidade.',
       course: 'Curso',
     },
     en: {
       title: 'About Us',
       subtitle: 'Meet Our Team',
-      introduction: 'Our team is made up of students passionate about technology and sustainability. Our goal is to develop innovative solutions that promote a greener, more conscious future.',
+      introduction: 'Our team is made up of students passionate about technology and sustainability.',
       course: 'Course',
     },
   };
