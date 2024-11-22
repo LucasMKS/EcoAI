@@ -1,11 +1,12 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { Zap, Brain, Sun } from 'lucide-react';
 import { useLanguage } from '../language/LanguageContext';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105">
+  <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105 shadow-neutral-400">
     <Icon className="w-12 h-12 text-green-600 mb-4" />
     <h3 className="text-xl font-bold mb-2 text-neutral-700">{title}</h3>
     <p className="text-neutral-600 font-inter">{description}</p>
@@ -73,12 +74,9 @@ export default function GreenSection() {
           ))}
         </div>
         <div className="mt-16 text-center font-inter">
-          <a
-            href="#"
-            className="inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors duration-300"
-          >
+          <Link href="/sustainability" className='inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors duration-300'>
             {exploreButton}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

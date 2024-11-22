@@ -46,19 +46,19 @@ export const HoverImageLinks = () => {
         <Link
           heading={content[language].link.heading}
           subheading={content[language].link.subheading}
-          imgSrc="https://unu.edu/sites/default/files/styles/content_width/public/2024-08/renee-featured-image.webp?itok=q80T8IXL"
+          imgSrc="/images/unuedu.webp"
           href="https://unu.edu/topics/climate-change"
         />
         <Link
           heading={content[language].link2.heading}
           subheading={content[language].link2.subheading}
-          imgSrc="https://media.springernature.com/w440/springer-static/cover-hires/journal/41558/14/11?q=95"
+          imgSrc="/images/nature.png"
           href="https://www.nature.com/nclimate/"
         />
         <Link
           heading={content[language].link3.heading}
           subheading={content[language].link3.subheading}
-          imgSrc="https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2024/11/Copy-of-Untitled-683-x-1024-px-72.jpg"
+          imgSrc="/images/earthorg.jpg"
           href="https://earth.org/climate-change/"
         />
       </div>

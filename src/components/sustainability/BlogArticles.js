@@ -114,32 +114,24 @@ const BlogArticles = () => {
                     <div className="space-y-5 md:space-y-8">
                         <div className="space-y-3">
                             <h2 className="text-2xl font-bold md:text-3xl font-roboto">{content[language].title}</h2>
-
                             <p className="text-lg text-neutral-700 ">{content[language].resume}</p>
                         </div>
-
                         <figure>
                             <img src="/images/climateChange.jpg" alt="Climate Change Image" />
                         </figure>
-
                         <div className="space-y-3" ref={sectionRefs.EnergyEfficiency} id="EnergyEfficiency">
                             <h3 className="text-2xl font-semibold font-roboto">{content[language].text.title}</h3>
                             <p className="text-lg text-neutral-700 ">{content[language].text.t1}</p>
                             <p className="text-lg text-neutral-700 ">{content[language].text.t2}</p>
                         </div>
-                        
                         <figure>
                             <img src="/images/EFFICIENT.jpg" alt="Energy Efficiency Image" />
                         </figure>
-
                         <div className="space-y-3" ref={sectionRefs.ClimateForecasting} id="ClimateForecasting">
                             <h3 className="text-2xl font-semibold font-roboto">{content[language].text2.title}</h3>
-
                             <p className="text-lg text-neutral-700 ">{content[language].text2.t1}</p>
                         </div>
-
                         <p className="text-lg text-neutral-700 ">{content[language].text2.t2}</p>
-
                         <blockquote className="text-center p-4 sm:px-7">
                             <p className="text-xl font-light text-neutral-700 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal font-roboto">
                                 {content[language].quote.text}
@@ -148,34 +140,27 @@ const BlogArticles = () => {
                                 {content[language].quote.person}
                             </p>
                         </blockquote>
-
                         <div className="space-y-3" ref={sectionRefs.ClimateChangeMonitoring} id="ClimateChangeMonitoring">
                             <h3 className="text-2xl font-semibold font-roboto">{content[language].text3.title}</h3>
-
                             <p className="text-lg text-neutral-700">{content[language].text3.t1}</p>
                             <p className="text-lg text-neutral-700">{content[language].text3.t2}</p>
                         </div>
-
                         <figure>
                             <img src="/images/emission.webp" alt="Climate Change Monitoring Image" />
                         </figure>
-
                         <div className="space-y-3">
                             <h3 className="text-2xl font-semibold font-roboto">{content[language].text4.title}</h3>
 
                             <p className="text-lg text-neutral-700 ">{content[language].text4.t1}</p>
                             <p className="text-lg text-neutral-700">{content[language].text4.t2}</p>
                         </div>
-
                         <div className="space-y-3">
                             <p className="text-2xl font-semibold font-roboto">{content[language].conclusion.title}</p>
                             <p className="text-lg text-neutral-700">{content[language].conclusion.text}</p>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
