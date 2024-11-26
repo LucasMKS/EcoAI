@@ -35,20 +35,33 @@ const BlogArticles = () => {
                 t1: (
                     <>
                         "A eficiência energética é uma das áreas mais promissoras para a aplicação da IA no combate às mudanças climáticas. Em sistemas de energia, a IA pode otimizar o consumo, prever demandas e integrar fontes renováveis de forma mais eficaz.
-                        <Button asChild>
-                            <Link href="/pdfs/sustainability-report.pdf" target="_blank" rel="noopener noreferrer"> A ICEF (2023)
-                            </Link>
-                        </Button>
-                        
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-ClimateRoadmapICEF.pdf" target="_blank" rel="noopener noreferrer"> A ICEF (2023) </Link>
                         destaca que a IA possibilita previsões de demanda energética que ajudam a reduzir o uso de combustíveis fósseis e a integrar fontes de energia renovável."
                     </>
                 ),
-                t2: "Chen et al. (2023) enfatizam que a IA, ao ser combinada com redes inteligentes (smart grids), pode reduzir o custo de eletricidade em até 20%, além de melhorar a confiabilidade e a resiliência das redes. Um exemplo é o uso de IA para gerenciar o fluxo de energia entre diversas fontes, garantindo o equilíbrio entre oferta e demanda, o que é essencial para uma rede sustentável.",
+                t2: (
+                    <>
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> Chen et al. (2023) </Link>
+                        enfatizam que a IA, ao ser combinada com redes inteligentes (smart grids), pode reduzir o custo de eletricidade em até 20%, além de melhorar a confiabilidade e a resiliência das redes. Um exemplo é o uso de IA para gerenciar o fluxo de energia entre diversas fontes, garantindo o equilíbrio entre oferta e demanda, o que é essencial para uma rede sustentável.
+                    </>
+                ),
             },
             text2: {
                 title: "Previsão Climática e Gestão de Emergências",
-                t1: "A precisão na previsão climática é outra área onde a IA oferece contribuições significativas. Graças a algoritmos de aprendizado profundo e análise de grandes volumes de dados meteorológicos, a IA consegue fornecer previsões mais detalhadas e em tempo real sobre eventos climáticos extremos, permitindo melhor preparação e resposta a esses fenômenos. Chen et al. (2023) destacam que cerca de 70% do setor de gás natural já utiliza IA para aprimorar a precisão de previsões meteorológicas, auxiliando na prevenção de desastres naturais.",
-                t2: "Além disso, a IA permite monitorar emissões de GEE em tempo real, utilizando sensores e imagens de satélite. Isso facilita a identificação de fontes de emissão, como vazamentos de metano em infraestruturas industriais, e possibilita a implementação rápida de medidas corretivas (ICEF, 2023). A combinação de dados climáticos e análise preditiva também é uma estratégia-chave para aprimorar modelos climáticos e, assim, informar melhor os formuladores de políticas públicas.",
+                t1: (
+                    <>
+                        A precisão na previsão climática é outra área onde a IA oferece contribuições significativas. Graças a algoritmos de aprendizado profundo e análise de grandes volumes de dados meteorológicos, a IA consegue fornecer previsões mais detalhadas e em tempo real sobre eventos climáticos extremos, permitindo melhor preparação e resposta a esses fenômenos.
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> Chen et al. (2023) </Link>
+                        destacam que cerca de 70% do setor de gás natural já utiliza IA para aprimorar a precisão de previsões meteorológicas, auxiliando na prevenção de desastres naturais.
+                    </>
+                ),
+                t2: (
+                    <>
+                        Além disso, a IA permite monitorar emissões de GEE em tempo real, utilizando sensores e imagens de satélite. Isso facilita a identificação de fontes de emissão, como vazamentos de metano em infraestruturas industriais, e possibilita a implementação rápida de medidas corretivas
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> (ICEF, 2023) </Link>
+                        A combinação de dados climáticos e análise preditiva também é uma estratégia-chave para aprimorar modelos climáticos e, assim, informar melhor os formuladores de políticas públicas.
+                    </>
+                ),
             },
             quote: {
                 text: "AI is a powerful tool that is being used in nearly every sector, from generating images to medicine, there is no reason why it can’t also be used to build society’s resilience to climate change.",
@@ -62,7 +75,13 @@ const BlogArticles = () => {
             text4: {
                 title: "Desafios e Recomendações",
                 t1: "Apesar das grandes promessas, a adoção da IA para mitigação climática enfrenta desafios significativos. Entre eles estão o alto custo da tecnologia, a necessidade de infraestrutura robusta para processar grandes volumes de dados e preocupações éticas relacionadas à privacidade. Outro ponto importante é o impacto ambiental da própria infraestrutura de IA, que demanda uma quantidade significativa de energia e recursos para operar.",
-                t2: "A ICEF (2023) sugere o desenvolvimento de políticas públicas para fomentar o uso da IA em iniciativas climáticas, promovendo também o compartilhamento de dados climáticos entre instituições. Incentivos para pesquisa e desenvolvimento de IA focada em sustentabilidade são cruciais para reduzir barreiras financeiras e técnicas, enquanto a criação de diretrizes éticas pode mitigar preocupações com privacidade e segurança.",
+                t2: (
+                    <>
+                        A
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> ICEF (2023) </Link>
+                        sugere o desenvolvimento de políticas públicas para fomentar o uso da IA em iniciativas climáticas, promovendo também o compartilhamento de dados climáticos entre instituições. Incentivos para pesquisa e desenvolvimento de IA focada em sustentabilidade são cruciais para reduzir barreiras financeiras e técnicas, enquanto a criação de diretrizes éticas pode mitigar preocupações com privacidade e segurança.
+                    </>
+                ),
             },
             conclusion: {
                 title: "Conclusão",
@@ -78,13 +97,36 @@ const BlogArticles = () => {
             ),
             text: {
                 title: "Energy Efficiency and Grid Management",
-                t1: "Energy efficiency is one of the most promising areas for applying AI in climate change mitigation. In energy systems, AI can optimize consumption, forecast demand, and integrate renewable sources more effectively. ICEF (2023) highlights that AI enables energy demand forecasts that help reduce fossil fuel reliance and integrate renewable energy sources.",
-                t2: "Chen et al. (2023) emphasize that AI, when combined with smart grids, can reduce electricity costs by up to 20%, while improving grid reliability and resilience. An example includes AI's ability to manage energy flow among various sources, ensuring balance between supply and demand, essential for a sustainable grid.",
+                t1: (
+                    <>
+                        Energy efficiency is one of the most promising areas for applying AI in climate change mitigation. In energy systems, AI can optimize consumption, forecast demand, and integrate renewable sources more effectively.
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> ICEF (2023) </Link>
+                        highlights that AI enables energy demand forecasts that help reduce fossil fuel reliance and integrate renewable energy sources.
+                    </>
+                ),
+                t2: (
+                    <>
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> Chen et al. (2023) </Link>
+                        emphasize that AI, when combined with smart grids, can reduce electricity costs by up to 20%, while improving grid reliability and resilience. An example includes AI's ability to manage energy flow among various sources, ensuring balance between supply and demand, essential for a sustainable grid.
+                    </>
+                ),
             },
             text2: {
                 title: "Climate Forecasting and Emissions Monitoring",
-                t1: "Accuracy in climate forecasting is another area where AI offers significant contributions. Through deep learning algorithms and analysis of vast meteorological data, AI provides detailed, real-time forecasts on extreme weather events, enabling better preparation and response to such phenomena. Chen et al. (2023) note that approximately 70% of the natural gas sector already uses AI to improve weather forecast accuracy, aiding in natural disaster prevention.",
-                t2: "Additionally, AI enables real-time GHG emissions monitoring using sensors and satellite imagery. This facilitates the identification of emission sources, such as methane leaks in industrial infrastructure, and allows for the swift implementation of corrective measures (ICEF, 2023). Combining climate data and predictive analysis is also a key strategy for enhancing climate models and, thereby, better informing policymakers.",
+                t1: (
+                    <>
+                        Accuracy in climate forecasting is another area where AI offers significant contributions. Through deep learning algorithms and analysis of vast meteorological data, AI provides detailed, real-time forecasts on extreme weather events, enabling better preparation and response to such phenomena.
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> Chen et al. (2023) </Link>
+                        note that approximately 70% of the natural gas sector already uses AI to improve weather forecast accuracy, aiding in natural disaster prevention.
+                    </>
+                ),
+                t2: (
+                    <>
+                        Additionally, AI enables real-time GHG emissions monitoring using sensors and satellite imagery. This facilitates the identification of emission sources, such as methane leaks in industrial infrastructure, and allows for the swift implementation of corrective measures
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> ICEF (2023). </Link>
+                        Combining climate data and predictive analysis is also a key strategy for enhancing climate models and, thereby, better informing policymakers.
+                    </>
+                ),
             },
             quote: {
                 text: "AI is a powerful tool that is being used in nearly every sector, from generating images to medicine, there is no reason why it can’t also be used to build society’s resilience to climate change.",
@@ -98,7 +140,12 @@ const BlogArticles = () => {
             text4: {
                 title: "Challenges and Recommendations",
                 t1: "Despite its great promise, adopting AI for climate mitigation faces significant challenges. These include high technology costs, the need for robust infrastructure to process large data volumes, and ethical concerns related to privacy. Another key point is the environmental impact of AI infrastructure itself, which demands a significant amount of energy and resources to operate.",
-                t2: "ICEF (2023) suggests developing public policies to promote AI use in climate initiatives, encouraging the sharing of climate data across institutions. Funding for research and development of AI focused on sustainability is crucial to reducing financial and technical barriers, while ethical guidelines are needed to address privacy and security concerns.",
+                t2: (
+                    <>
+                        <Link className="text-blue-600 hover:underline" href="/pdfs/AI-based-Solutions-for-Climate-Change.pdf" target="_blank" rel="noopener noreferrer"> ICEF (2023) </Link>
+                        suggests developing public policies to promote AI use in climate initiatives, encouraging the sharing of climate data across institutions. Funding for research and development of AI focused on sustainability is crucial to reducing financial and technical barriers, while ethical guidelines are needed to address privacy and security concerns.
+                    </>
+                ),
             },
             conclusion: {
                 title: "Conclusion",
