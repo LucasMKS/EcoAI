@@ -19,7 +19,7 @@ export function AnimatedTestimonialsDemo() {
       name1: 'Lucas Marques da Silva',
       designation1: (
         <>
-          Ciência da Computação - UNA Contagem. <Link className="text-blue-500 underline hover:text-blue-700 transition duration-300" href="/pdfs/GabrielGaldino.pdf" passHref target="_blank"> Curriculo </Link>
+          Ciência da Computação - UNA Contagem. <Link className="text-blue-500 underline hover:text-blue-700 transition duration-300" href="/pdfs/LucasMarques.pdf" passHref target="_blank"> Curriculo </Link>
         </>
       ),
       src1: '/images/lucasm.jpg',
@@ -37,7 +37,7 @@ export function AnimatedTestimonialsDemo() {
       name1: 'Lucas Marques da Silva',
       designation1: (
         <>
-        Computer Science - UNA Contagem. <Link className="text-blue-500 underline hover:text-blue-700 transition duration-300" href="/pdfs/GabrielGaldino.pdf" passHref target="_blank"> Resume </Link>
+        Computer Science - UNA Contagem. <Link className="text-blue-500 underline hover:text-blue-700 transition duration-300" href="/pdfs/LucasMarques.pdf" passHref target="_blank"> Resume </Link>
       </>
       ),
       src1: '/images/lucasm.jpg',
