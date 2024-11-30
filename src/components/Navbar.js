@@ -12,7 +12,7 @@ const NavButton = ({ href, children, onClick }) => {
   return (
     <Link
       href={href}
-      className="px-4 py-3 rounded-md text-lg font-semibold hover:bg-green-700 focus:bg-green-700 transition duration-150 ease-in-out"
+      className="px-4 py-3 rounded-md text-lg font-semibold hover:bg-green-700 focus:bg-green-700 transition duration-150 ease-in-out zoom-in-90"
       onClick={onClick}
     >
       {children}

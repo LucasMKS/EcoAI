@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { useLanguage } from "../language/LanguageContext";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function FeatureSection() {
   const { language } = useLanguage();
+  const opts = useMemo(
+    () => ({
+      height: "390",
+      width: "640",
+      playerVars: {
+        autoplay: 0, // Evita o autoplay
+      },
+    }),
+    [] // Dependências vazias: será memoizado apenas na montagem
+  );
 
   const features = {
     pt: {
@@ -106,24 +118,39 @@ export default function FeatureSection() {
         {" "}
         VIDEOS{" "}
       </p>
-      <div className="mt-12 bg-neutral-900 p-6 rounded-lg justify-center flex flex-col items-center gap-4 mx-auto shadow-lg shadow-neutral-800  w-full sm:w-5/6 md:flex-row lg:w-4/5 xl:w-2/3">
-        <iframe
-          className="w-full sm:w-3/5 lg:w-[600px] h-44 sm:h-56 lg:h-[315px]"
-          src="https://www.youtube.com/embed/RNhbqQefPSg?si=15CcNPV7ReX59sZw"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-
-        <iframe
-          className="w-full sm:w-3/5 lg:w-[600px] h-44 sm:h-56 lg:h-[315px]"
-          src="https://www.youtube.com/embed/OskYAE3P9oI?si=_TR_oqGug948N48L"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+      <div className="mt-12 bg-neutral-900 p-6 rounded-lg justify-center flex flex-col items-center gap-4 mx-auto w-full sm:w-5/6 md:flex-row lg:w-4/5 xl:w-2/3">
+        <Link
+          href="https://www.youtube.com/watch?v=RNhbqQefPSg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="mb-2 text-neutral-300 font-robotoCondensed text-center hover:no-underline">
+            Can AI Help Solve the Climate Crisis? | Sims Witherspoon | TED
+          </p>
+          <Image
+            src="/images/ted.jpg"
+            alt="Can AI Help Solve the Climate Crisis? | Sims Witherspoon | TED"
+            width={640}
+            height={390}
+            className="rounded-md hover:transform hover:scale-105 transition-transform"
+          />
+        </Link>
+        <Link
+          href="https://www.youtube.com/watch?v=OskYAE3P9oI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className="mb-2 text-neutral-300 font-robotoCondensed text-center hover:stroke-none">
+            Climate Tech vs. Cleantech: What's the Difference?
+          </p>
+          <Image
+            src="/images/climate-tech.jpg"
+            alt="Climate Tech vs. Cleantech: What's the Difference?"
+            width={640}
+            height={390}
+            className="rounded-md hover:transform hover:scale-105 transition-transform"
+          />
+        </Link>
       </div>
     </div>
   );

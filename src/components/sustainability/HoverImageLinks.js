@@ -3,7 +3,7 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useLanguage } from "../language/LanguageContext";
 import { FiArrowRight } from "react-icons/fi";
 
-export const HoverImageLinks = () => {
+export default function HoverImageLinks() {
   const { language } = useLanguage();
 
   const content = {
@@ -70,7 +70,7 @@ export const HoverImageLinks = () => {
       </div>
     </section>
   );
-};
+}
 
 const Link = ({ heading, imgSrc, subheading, href }) => {
   const ref = useRef(null);

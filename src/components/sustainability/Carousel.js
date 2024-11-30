@@ -64,7 +64,7 @@ const SPRING_OPTIONS = {
   damping: 50,
 };
 
-export const SwipeCarousel = () => {
+export default function SwipeCarousel() {
   const [imgIndex, setImgIndex] = useState(0);
   const dragX = useMotionValue(0);
 
@@ -128,7 +128,7 @@ export const SwipeCarousel = () => {
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
     </div>
   );
-};
+}
 
 const Cards = ({ imgIndex }) => {
   return (

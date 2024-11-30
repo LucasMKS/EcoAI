@@ -1,17 +1,22 @@
-'use client'
+"use client";
 
-import React, { useRef } from 'react'
-import HeroSection from '../../components/sustainability/HeroSection'
-import { SwipeCarousel } from '../../components/sustainability/Carousel';
-import { HoverImageLinks } from '../../components/sustainability/HoverImageLinks';
-import BlogArticles from '../../components/sustainability/BlogArticles';
-import FeatureSection from '../../components/sustainability/FeatureSection';
+import React, { useRef } from "react";
+import HeroSection from "../../components/sustainability/HeroSection";
+import SwipeCarousel from "../../components/sustainability/Carousel";
+import HoverImageLinks from "../../components/sustainability/HoverImageLinks";
+import BlogArticles from "../../components/sustainability/BlogArticles";
+import dynamic from "next/dynamic";
+
+const LazyFeatureSection = dynamic(
+  () => import("../../components/sustainability/FeatureSection"),
+  { ssr: false } // Desativa a renderização no servidor
+);
 
 export default function Sustainability() {
   const blogArticlesRef = useRef(null);
 
   const scrollToBlogArticles = () => {
-    blogArticlesRef.current?.scrollIntoView({ behavior: 'smooth' });
+    blogArticlesRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -21,10 +26,10 @@ export default function Sustainability() {
         <div ref={blogArticlesRef}>
           <BlogArticles />
         </div>
-        <FeatureSection />
+        <LazyFeatureSection />
         <HoverImageLinks />
         <SwipeCarousel />
       </main>
     </div>
-  )
+  );
 }
