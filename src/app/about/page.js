@@ -1,9 +1,9 @@
 // Home.js
 "use client";
 
-import React from 'react';
-import AboutUs from '../../components/about/AboutUs';
-import Hero from '../../components/about/Feature';
+import React from "react";
+import AboutUs from "../../components/about/AboutUs";
+import Hero from "../../components/about/Feature";
 
 export default function About() {
   return (

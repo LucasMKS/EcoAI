@@ -1,6 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SiNextdotjs, SiGithub, SiGooglescholar, SiOpenai, SiCanva, SiVercel } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiGithub,
+  SiGooglescholar,
+  SiOpenai,
+  SiCanva,
+  SiVercel,
+} from "react-icons/si";
 import { twMerge } from "tailwind-merge";
 
 export const DivOrigami = () => {

@@ -1,49 +1,55 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import Link from 'next/link';
+import Link from "next/link";
 
 const cards = [
   {
     imgSrc: "/images/carousel/unep.png",
     title: "Climate Action",
-    description: "How artificial intelligence is helping tackle environmental challenges",
-    url: "https://www.unep.org/news-and-stories/story/how-artificial-intelligence-helping-tackle-environmental-challenges"
+    description:
+      "How artificial intelligence is helping tackle environmental challenges",
+    url: "https://www.unep.org/news-and-stories/story/how-artificial-intelligence-helping-tackle-environmental-challenges",
   },
   {
     imgSrc: "/images/carousel/earthOrg.png",
     title: "Can Machine Learning Help Tackle Climate Change?",
     description: "Otimizando o uso de recursos para um mundo melhor",
-    url: "https://earth.org/machine-learning-climate-change/"
+    url: "https://earth.org/machine-learning-climate-change/",
   },
   {
     imgSrc: "/images/carousel/unuEdu.png",
-    title: "UNU Report: Don’t Dismiss the Great Power of AI for Climate Change Impact Assessment",
+    title:
+      "UNU Report: Don’t Dismiss the Great Power of AI for Climate Change Impact Assessment",
     description: "Transformando resíduos em oportunidades",
-    url: "https://unu.edu/inweh/press-release/unu-report-dont-dismiss-great-power-ai-climate-change-impact-assessment"
+    url: "https://unu.edu/inweh/press-release/unu-report-dont-dismiss-great-power-ai-climate-change-impact-assessment",
   },
   {
     imgSrc: "/images/carousel/ClimateRoadmap.png",
     title: "Artificial Intelligence for Climate Change Mitigation Roadmap",
-    description: "O documento 'Artificial Intelligence for Climate Change Mitigation Roadmap' (ICEF, dezembro de 2023) explora o potencial da Inteligência Artificial (IA) para reduzir as emissões de gases de efeito estufa (GEE) e apoiar o combate às mudanças climáticas.",
-    url: "/pdfs/AI-ClimateRoadmapICEF.pdf"
+    description:
+      "O documento 'Artificial Intelligence for Climate Change Mitigation Roadmap' (ICEF, dezembro de 2023) explora o potencial da Inteligência Artificial (IA) para reduzir as emissões de gases de efeito estufa (GEE) e apoiar o combate às mudanças climáticas.",
+    url: "/pdfs/AI-ClimateRoadmapICEF.pdf",
   },
   {
     imgSrc: "/images/carousel/KaackAligning.png",
     title: "Aligning artificial intelligence with climate change mitigation",
-    description: "O documento 'Aligning Artificial Intelligence with Climate Change Mitigation' (Kaack et al., 2021) propõe um modelo para analisar o impacto da Inteligência Artificial (IA) na mitigação das mudanças climáticas.",
-    url: "/pdfs/Kaack_2021_Aligning.pdf"
+    description:
+      "O documento 'Aligning Artificial Intelligence with Climate Change Mitigation' (Kaack et al., 2021) propõe um modelo para analisar o impacto da Inteligência Artificial (IA) na mitigação das mudanças climáticas.",
+    url: "/pdfs/Kaack_2021_Aligning.pdf",
   },
   {
     imgSrc: "/images/carousel/AI-based.png",
-    title: "Artifcial intelligence‑based solutions for climate change: a review",
-    description: "O documento 'Artificial intelligence-based solutions for climate change: a review' (2023) discute o papel da Inteligência Artificial (IA) em mitigar os efeitos das mudanças climáticas, abordando várias áreas principais.",
-    url: "/pdfs/AI-based-Solutions-for-Climate-Change.pdf"
+    title:
+      "Artifcial intelligence‑based solutions for climate change: a review",
+    description:
+      "O documento 'Artificial intelligence-based solutions for climate change: a review' (2023) discute o papel da Inteligência Artificial (IA) em mitigar os efeitos das mudanças climáticas, abordando várias áreas principais.",
+    url: "/pdfs/AI-based-Solutions-for-Climate-Change.pdf",
   },
   {
     imgSrc: "/images/carousel/HarnessingPowerAI.png",
     title: "Harnessing the Power of AI for Climate Change Impact Assessment",
     description: "Cultivando um amanhã mais verde",
-    url: "/pdfs/Harnessing_the_Power_of_AI__Obringer__2024_.pdf"
+    url: "/pdfs/Harnessing_the_Power_of_AI__Obringer__2024_.pdf",
   },
 ];
 
@@ -91,14 +97,14 @@ export const SwipeCarousel = () => {
 
   return (
     <div className="relative overflow-hidden bg-neutral-950 py-8 px-4">
-        <motion.h2 
-          className="text-3xl md:text-4xl font-bold text-center text-white "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-        >
-          More articles
-        </motion.h2>
+      <motion.h2
+        className="text-3xl md:text-4xl font-bold text-center text-white "
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.8 }}
+      >
+        More articles
+      </motion.h2>
 
       <motion.div
         drag="x"
@@ -137,10 +143,19 @@ const Cards = ({ imgIndex }) => {
             transition={SPRING_OPTIONS}
             className="w-full shrink-0 px-2"
           >
-            <Link href={card.url} passHref target="_blank" rel="noopener noreferrer" >
+            <Link
+              href={card.url}
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="card w-full bg-base-100 shadow-xl image-full cursor-pointer">
                 <figure>
-                  <img src={card.imgSrc} alt={card.title} className="w-full h-full object-cover" />
+                  <img
+                    src={card.imgSrc}
+                    alt={card.title}
+                    className="w-full h-full object-cover"
+                  />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">{card.title}</h2>

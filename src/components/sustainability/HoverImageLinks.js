@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import { useLanguage } from '../language/LanguageContext';
+import { useLanguage } from "../language/LanguageContext";
 import { FiArrowRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
@@ -8,40 +8,46 @@ export const HoverImageLinks = () => {
 
   const content = {
     pt: {
-      title: 'Fontes relevantes para pesquisa',
+      title: "Fontes relevantes para pesquisa",
       link: {
-        heading: 'UNU',
-        subheading: 'Universidade das Nações Unidas',
+        heading: "UNU",
+        subheading: "Universidade das Nações Unidas",
       },
       link2: {
-        heading: 'NATURE',
-        subheading: 'Nature é a principal revista científica multidisciplinar do mundo',
+        heading: "NATURE",
+        subheading:
+          "Nature é a principal revista científica multidisciplinar do mundo",
       },
       link3: {
-        heading: 'EARTH.ORG',
-        subheading: 'Um site de notícias ambientais que tem como objetivo ilustrar as repercussões das mudanças climáticas sobre os seres humanos e o meio ambiente por meio do jornalismo de dados.',
+        heading: "EARTH.ORG",
+        subheading:
+          "Um site de notícias ambientais que tem como objetivo ilustrar as repercussões das mudanças climáticas sobre os seres humanos e o meio ambiente por meio do jornalismo de dados.",
       },
     },
     en: {
-      title: 'Relevant sources for research',
+      title: "Relevant sources for research",
       link: {
-        heading: 'UNU',
-        subheading: 'United Nations University',
+        heading: "UNU",
+        subheading: "United Nations University",
       },
       link2: {
-        heading: 'NATURE',
-        subheading: "Nature is the world's leading multidisciplinary science journal",
+        heading: "NATURE",
+        subheading:
+          "Nature is the world's leading multidisciplinary science journal",
       },
       link3: {
-        heading: 'EARTH.ORG',
-        subheading: 'an environmental news website that aims to illustrate the repercussions of climate change on the humans and the environment with power data journalism.',
+        heading: "EARTH.ORG",
+        subheading:
+          "an environmental news website that aims to illustrate the repercussions of climate change on the humans and the environment with power data journalism.",
       },
     },
   };
 
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-white">{content[language].title}</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-white">
+        {content[language].title}
+      </h1>
       <div className="mx-auto max-w-5xl">
         <Link
           heading={content[language].link.heading}

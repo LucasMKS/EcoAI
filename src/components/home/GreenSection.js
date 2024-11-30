@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { Zap, Brain, Sun } from 'lucide-react';
-import { useLanguage } from '../language/LanguageContext';
+import React from "react";
+import Link from "next/link";
+import { Zap, Brain, Sun } from "lucide-react";
+import { useLanguage } from "../language/LanguageContext";
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105 shadow-neutral-400">
@@ -18,41 +18,47 @@ export default function GreenSection() {
 
   const content = {
     pt: {
-      heading: 'Inteligência Artificial na Mitigação das Mudanças Climáticas',
+      heading: "Inteligência Artificial na Mitigação das Mudanças Climáticas",
       solutions: [
         {
           title: "Previsão Climática e Gestão de Emergências",
-          description: "IA melhora previsões climáticas, monitora emissões em tempo real e auxilia políticas públicas com análises preditivas e dados precisos."
+          description:
+            "IA melhora previsões climáticas, monitora emissões em tempo real e auxilia políticas públicas com análises preditivas e dados precisos.",
         },
         {
           title: "Eficiência Energética e Gestão de Redes Elétricas",
-          description: "IA otimiza consumo energético, prevê demandas, integra renováveis e reduz custos em 20% com redes inteligentes, promovendo sustentabilidade."
+          description:
+            "IA otimiza consumo energético, prevê demandas, integra renováveis e reduz custos em 20% com redes inteligentes, promovendo sustentabilidade.",
         },
         {
           title: "Monitoramento das Mudanças Climáticas",
-          description: "IA processa grandes dados climáticos, detecta desmatamentos em tempo real e apoia políticas ambientais com análises rápidas e detalhadas."
+          description:
+            "IA processa grandes dados climáticos, detecta desmatamentos em tempo real e apoia políticas ambientais com análises rápidas e detalhadas.",
         },
       ],
-      exploreButton: "Explore Todas as Soluções"
+      exploreButton: "Explore Todas as Soluções",
     },
     en: {
-      heading: 'Artificial Intelligence in Climate Change Mitigation',
+      heading: "Artificial Intelligence in Climate Change Mitigation",
       solutions: [
         {
           title: "Climate Forecasting and Emergency Management",
-          description: "AI enhances climate predictions, monitors emissions in real time, and supports public policies with predictive analysis and accurate data."
+          description:
+            "AI enhances climate predictions, monitors emissions in real time, and supports public policies with predictive analysis and accurate data.",
         },
         {
           title: "Energy Efficiency and Grid Management",
-          description: "AI optimizes energy consumption, predicts demand, integrates renewables, and reduces costs by 20% with smart grids, fostering sustainability."
+          description:
+            "AI optimizes energy consumption, predicts demand, integrates renewables, and reduces costs by 20% with smart grids, fostering sustainability.",
         },
         {
           title: "Climate Change Monitoring",
-          description: "AI processes large climate datasets, detects deforestation in real time, and supports environmental policies with fast, detailed analyses."
+          description:
+            "AI processes large climate datasets, detects deforestation in real time, and supports environmental policies with fast, detailed analyses.",
         },
       ],
-      exploreButton: "Explore All Solutions"
-    }
+      exploreButton: "Explore All Solutions",
+    },
   };
 
   const { heading, solutions, exploreButton } = content[language];
@@ -74,7 +80,10 @@ export default function GreenSection() {
           ))}
         </div>
         <div className="mt-16 text-center font-inter">
-          <Link href="/sustainability" className='inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors duration-300'>
+          <Link
+            href="/sustainability"
+            className="inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors duration-300"
+          >
             {exploreButton}
           </Link>
         </div>

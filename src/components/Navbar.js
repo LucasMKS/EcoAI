@@ -1,16 +1,20 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Image from "next/image";
-import { Edit, PlusSquare, Share, Menu } from 'lucide-react';
-import Link from 'next/link';
-import LanguageSwitcher from '../components/language/LanguageSwitcher';
-import { useLanguage } from '../components/language/LanguageContext';
-import { motion } from 'framer-motion';
+import { Edit, PlusSquare, Share, Menu } from "lucide-react";
+import Link from "next/link";
+import LanguageSwitcher from "../components/language/LanguageSwitcher";
+import { useLanguage } from "../components/language/LanguageContext";
+import { motion } from "framer-motion";
 
 const NavButton = ({ href, children, onClick }) => {
   return (
-    <Link href={href} className="px-4 py-3 rounded-md text-lg font-semibold hover:bg-green-700 focus:bg-green-700 transition duration-150 ease-in-out" onClick={onClick}>
+    <Link
+      href={href}
+      className="px-4 py-3 rounded-md text-lg font-semibold hover:bg-green-700 focus:bg-green-700 transition duration-150 ease-in-out"
+      onClick={onClick}
+    >
       {children}
     </Link>
   );
@@ -21,14 +25,14 @@ const StaggeredDropDown = ({ language }) => {
 
   const dropdownItems = {
     pt: {
-      home: 'Inicio',
-      sustainability: 'Sustentabilidade',
-      about: 'Sobre',
+      home: "Inicio",
+      sustainability: "Sustentabilidade",
+      about: "Sobre",
     },
     en: {
-      home: 'Home',
-      sustainability: 'Sustainability',
-      about: 'About',
+      home: "Home",
+      sustainability: "Sustainability",
+      about: "About",
     },
   };
 
@@ -38,9 +42,11 @@ const StaggeredDropDown = ({ language }) => {
         onClick={() => setOpen((pv) => !pv)}
         className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-indigo-500 hover:bg-indigo-600 transition-colors"
       >
-        <span className="font-medium text-sm">{dropdownItems[language].postActions}</span>
+        <span className="font-medium text-sm">
+          {dropdownItems[language].postActions}
+        </span>
         <motion.span variants={iconVariants}>
-           <Menu size={16} />
+          <Menu size={16} />
         </motion.span>
       </button>
 
@@ -50,9 +56,24 @@ const StaggeredDropDown = ({ language }) => {
         style={{ originY: "top", translateX: "-50%" }}
         className="flex flex-col gap-2 p-2 rounded-lg bg-white shadow-xl absolute top-[120%] left-[50%] w-48 overflow-hidden"
       >
-        <Option setOpen={setOpen} Icon={Edit} text={dropdownItems[language].home} href="/" />
-        <Option setOpen={setOpen} Icon={PlusSquare} text={dropdownItems[language].sustainability} href="/sustainability" />
-        <Option setOpen={setOpen} Icon={Share} text={dropdownItems[language].about} href="/about" />
+        <Option
+          setOpen={setOpen}
+          Icon={Edit}
+          text={dropdownItems[language].home}
+          href="/"
+        />
+        <Option
+          setOpen={setOpen}
+          Icon={PlusSquare}
+          text={dropdownItems[language].sustainability}
+          href="/sustainability"
+        />
+        <Option
+          setOpen={setOpen}
+          Icon={Share}
+          text={dropdownItems[language].about}
+          href="/about"
+        />
       </motion.ul>
     </motion.div>
   );
@@ -80,14 +101,14 @@ const Navbar = () => {
 
   const navItems = {
     pt: {
-      home: 'Início',
-      about: 'Sobre',
-      sustainability: 'Sustentabilidade',
+      home: "Início",
+      about: "Sobre",
+      sustainability: "Sustentabilidade",
     },
     en: {
-      home: 'Home',
-      about: 'About',
-      sustainability: 'Sustainability',
+      home: "Home",
+      about: "About",
+      sustainability: "Sustainability",
     },
   };
 
@@ -101,11 +122,14 @@ const Navbar = () => {
               height={300}
               src="/images/logo2_ed.png"
               alt="Logo sustentability"
-              className="h-10 w-full rounded-lg object-cover object-top" />
+              className="h-10 w-full rounded-lg object-cover object-top"
+            />
           </div>
           <div className="hidden md:flex space-x-6 mx-auto">
             <NavButton href="/">{navItems[language].home}</NavButton>
-            <NavButton href="/sustainability">{navItems[language].sustainability}</NavButton>
+            <NavButton href="/sustainability">
+              {navItems[language].sustainability}
+            </NavButton>
             <NavButton href="/about">{navItems[language].about}</NavButton>
           </div>
           <div className="hidden md:flex">
