@@ -29,8 +29,8 @@ const roboto_Condensed = Roboto_Condensed({
   weight: ["300", "400", "700"],
 });
 export const metadata = {
-  title: "Sustentabilidade Inteligente",
-  description: "Sustentabilidade Inteligente",
+  title: "EcoAI",
+  description: "Artificial Intelligence and Sustainability",
 };
 
 export default async function RootLayout({ children }) {

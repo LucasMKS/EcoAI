@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { useLanguage } from "../language/LanguageContext";
 import Image from "next/image";
@@ -6,16 +6,6 @@ import Link from "next/link";
 
 export default function FeatureSection() {
   const { language } = useLanguage();
-  const opts = useMemo(
-    () => ({
-      height: "390",
-      width: "640",
-      playerVars: {
-        autoplay: 0, // Evita o autoplay
-      },
-    }),
-    [] // Dependências vazias: será memoizado apenas na montagem
-  );
 
   const features = {
     pt: {
