@@ -81,11 +81,9 @@ To run this project on your local machine, follow these steps:
 .
 ├── public/             # Static files (images, icons, etc.)
 ├── src/
+│   ├── app/            # Main application logic
 │   ├── components/     # Reusable components
-│   ├── pages/          # Next.js pages
-│   ├── styles/         # CSS and Tailwind styles
-│   ├── utils/          # Helper functions
-├── .env                # Environment variables
+│   ├── libs/           # Shared libraries and utilities
 ├── package.json        # Project dependencies
 ├── README.md           # Project documentation
 ```
