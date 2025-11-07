@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+import {Link} from '../../navigation';
 import {useTranslations} from 'next-intl';
 import FeatureCard from "./FeatureCard";
 import { Zap, Brain, Sun } from "lucide-react";
