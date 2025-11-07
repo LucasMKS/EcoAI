@@ -4,7 +4,7 @@ import Footer from "../../components/FooterPage";
 import { Inter, Roboto, Alkatra, Roboto_Condensed } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getMessages, setRequestLocale} from 'next-intl/server';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +35,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: {locale} }) {
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
