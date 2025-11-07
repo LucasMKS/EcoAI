@@ -1,0 +1,31 @@
+{
+  "PrincipalSlider": {
+    "title": "EcoAI",
+    "subtitle": "Inteligência Artificial e Sustentabilidade",
+    "text": "A inteligência artificial é uma área da tecnologia que se destaca pela capacidade de desenvolver sistemas que simulam a inteligência humana, realizando tarefas complexas como reconhecimento de padrões, aprendizado com dados e automação de processos. A IA tem um papel crucial na mitigação das mudanças climáticas, pois possibilita uma abordagem baseada em dados para monitoramento e controle ambiental.",
+    "button": "Saiba mais"
+  },
+  "GreenSection": {
+    "heading": "Inteligência Artificial na Mitigação das Mudanças Climáticas",
+    "solutions": {
+      "solution1": {
+        "title": "Previsão Climática e Gestão de Emergências",
+        "description": "IA melhora previsões climáticas, monitora emissões em tempo real e auxilia políticas públicas com análises preditivas e dados precisos."
+      },
+      "solution2": {
+        "title": "Eficiência Energética e Gestão de Redes Elétricas",
+        "description": "IA otimiza consumo energético, prevê demandas, integra renováveis e reduz custos em 20% com redes inteligentes, promovendo sustentabilidade."
+      },
+      "solution3": {
+        "title": "Monitoramento das Mudanças Climáticas",
+        "description": "IA processa grandes dados climáticos, detecta desmatamentos em tempo real e apoia políticas ambientais com análises rápidas e detalhadas."
+      }
+    },
+    "exploreButton": "Explore Todas as Soluções"
+  },
+  "Navbar": {
+    "home": "Início",
+    "sustainability": "Sustentabilidade",
+    "about": "Sobre"
+  }
+}

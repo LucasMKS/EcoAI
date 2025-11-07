@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import { PrincipalSlider } from '../components/home/PrincipalSlider';
-import GreenSection from '../components/home/GreenSection'
+import { PrincipalSlider } from '../../components/home/PrincipalSlider';
+import GreenSection from '../../components/home/GreenSection'
 
 export default function Home() {
   return (

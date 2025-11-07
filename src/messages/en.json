@@ -1,0 +1,31 @@
+{
+  "PrincipalSlider": {
+    "title": "EcoAI",
+    "subtitle": "Artificial Intelligence and Sustainability",
+    "text": "Artificial intelligence is a field of technology renowned for its ability to develop systems that simulate human intelligence, performing complex tasks such as pattern recognition, data-driven learning, and process automation. AI plays a critical role in mitigating climate change by enabling a data-driven approach to environmental monitoring and control.",
+    "button": "Learn more"
+  },
+  "GreenSection": {
+    "heading": "Artificial Intelligence in Climate Change Mitigation",
+    "solutions": {
+      "solution1": {
+        "title": "Climate Forecasting and Emergency Management",
+        "description": "AI enhances climate predictions, monitors emissions in real time, and supports public policies with predictive analysis and accurate data."
+      },
+      "solution2": {
+        "title": "Energy Efficiency and Grid Management",
+        "description": "AI optimizes energy consumption, predicts demand, integrates renewables, and reduces costs by 20% with smart grids, fostering sustainability."
+      },
+      "solution3": {
+        "title": "Climate Change Monitoring",
+        "description": "AI processes large climate datasets, detects deforestation in real time, and supports environmental policies with fast, detailed analyses."
+      }
+    },
+    "exploreButton": "Explore All Solutions"
+  },
+  "Navbar": {
+    "home": "Home",
+    "sustainability": "Sustainability",
+    "about": "About"
+  }
+}
