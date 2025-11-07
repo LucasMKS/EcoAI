@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Edit, PlusSquare, Share, Menu } from "lucide-react";
-import {Link} from '../navigation';
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {useTranslations} from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';

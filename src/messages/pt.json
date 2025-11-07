@@ -27,5 +27,107 @@
     "home": "Início",
     "sustainability": "Sustentabilidade",
     "about": "Sobre"
+  },
+  "AboutUs": {
+    "title": "Sobre Nós",
+    "introduction": "Nossa equipe é formada por estudantes apaixonados por tecnologia e sustentabilidade."
+  },
+  "AnimatedTestimonials": {
+    "galdino": {
+      "quote": "Sou um profissional entusiasmado e aprendiz diligente, procurando explorar e expandir conhecimentos em novos campos. Mesmo sem experiência de trabalho significativa, possuo grande vontade, adaptabilidade e motivação para aprender.",
+      "name": "Gabriel Silva Galdino",
+      "designation": "Ciência da Computação - UNA Contagem. <link>Curriculo</link>"
+    },
+    "lucas": {
+      "quote": "Sou estudante de Ciência da Computação e estagiário na Prodemge, com uma grande paixão por tecnologia. Tenho interesse aprofundado em Java e experiência com diversas outras tecnologias, como Spring Boot e SQL, entre outras.",
+      "name": "Lucas Marques da Silva",
+      "designation": "Ciência da Computação - UNA Contagem. <link>Curriculo</link>"
+    }
+  },
+  "Feature": {
+    "tec": "Tecnologias usadas",
+    "title1": "Sobre o projeto",
+    "text1": "Este projeto tem como objetivo utilizar os conhecimentos desenvolvidos na Unidade Curricular Inglês Instrumental e Pensamento Digital para a construção de um Website, em inglês, acerca de uma ou diversas das temáticas relacionadas à tecnologia digital, conectando com o Tema Gerador do Semestre 2024.2 \"Terra, Nossa Casa\" e \"Cuidando do Planeta, Cuidando de Nós\".",
+    "title2": "O que é este projeto?",
+    "text2": "Este projeto reúne artigos e informações sobre como a Inteligência Artificial (IA) pode ser aplicada para combater as mudanças climáticas. Ele explora como a IA pode melhorar a eficiência energética, otimizar redes de energia, prever fenômenos climáticos extremos e monitorar o meio ambiente. O objetivo é compartilhar conhecimentos sobre as soluções tecnológicas disponíveis para mitigar os impactos das mudanças climáticas e promover um futuro mais sustentável."
+  },
+  "BlogArticles": {
+    "title": "IA na Mitigação das Mudanças Climáticas",
+    "resume": "A IA tem o potencial de revolucionar a forma como lidamos com as mudanças climáticas, fornecendo ferramentas para <energy>eficiência energética</energy>, <forecasting>previsão climática</forecasting>, <monitoring>monitoramento das mudanças climáticas</monitoring>, dentre outros. No entanto, para que sua contribuição seja maximizada, é necessário superar os desafios atuais, expandindo a disponibilidade de dados, integrando modelos de IA com abordagens tradicionais e garantindo que os desenvolvimentos sejam eticamente sustentáveis. A implementação de políticas públicas que apoiem o uso responsável da IA e promovam a colaboração entre instituições pode acelerar o desenvolvimento de tecnologias mais robustas e acessíveis, consolidando a IA como um dos pilares da sustentabilidade ambiental para as próximas gerações.",
+    "text": {
+      "title": "Eficiência Energética e Gestão de Redes Elétricas",
+      "t1": "A eficiência energética é uma das áreas mais promissoras para a aplicação da IA no combate às mudanças climáticas. Em sistemas de energia, a IA pode otimizar o consumo, prever demandas e integrar fontes renováveis de forma mais eficaz. <icef>A ICEF (2023)</icef> destaca que a IA possibilita previsões de demanda energética que ajudam a reduzir o uso de combustíveis fósseis e a integrar fontes de energia renovável.",
+      "t2": "<chen>Chen et al. (2023)</chen> enfatizam que a IA, ao ser combinada com redes inteligentes (smart grids), pode reduzir o custo de eletricidade em até 20%, além de melhorar a confiabilidade e a resiliência das redes. Um exemplo é o uso de IA para gerenciar o fluxo de energia entre diversas fontes, garantindo o equilíbrio entre oferta e demanda, o que é essencial para uma rede sustentável."
+    },
+    "text2": {
+      "title": "Previsão Climática e Gestão de Emergências",
+      "t1": "A precisão na previsão climática é outra área onde a IA oferece contribuições significativas. Graças a algoritmos de aprendizado profundo e análise de grandes volumes de dados meteorológicos, a IA consegue fornecer previsões mais detalhadas e em tempo real sobre eventos climáticos extremos, permitindo melhor preparação e resposta a esses fenômenos. <chen>Chen et al. (2023)</chen> destacam que cerca de 70% do setor de gás natural já utiliza IA para aprimorar a precisão de previsões meteorológicas, auxiliando na prevenção de desastres naturais.",
+      "t2": "Além disso, a IA permite monitorar emissões de GEE em tempo real, utilizando sensores e imagens de satélite. Isso facilita a identificação de fontes de emissão, como vazamentos de metano em infraestruturas industriais, e possibilita a implementação rápida de medidas corretivas <icef>(ICEF, 2023)</icef>. A combinação de dados climáticos e análise preditiva também é uma estratégia-chave para aprimorar modelos climáticos e, assim, informar melhor os formuladores de políticas públicas."
+    },
+    "quote": {
+      "text": "A IA é uma ferramenta poderosa que está sendo usada em quase todos os setores, desde a geração de imagens até a medicina, não há razão para que não possa ser usada também para construir a resiliência da sociedade às mudanças climáticas.",
+      "person": "Dr. Renee Obringer"
+    },
+    "text3": {
+      "title": "Monitoramento das Mudanças Climáticas",
+      "t1": "A aplicação da IA, especialmente do Machine Learning (ML), tem possibilitado o processamento de grandes volumes de dados climáticos, captados por satélites e sensores. Esses dados, fundamentais para a análise de padrões climáticos, podem ser processados e interpretados de forma mais rápida e precisa pela IA, que identifica padrões e tendências a partir de séries temporais complexas. Um dos maiores desafios da ciência climática é justamente a quantidade massiva de dados produzidos continuamente. No entanto, essa quantidade de informação só se torna útil quando pode ser organizada e analisada eficientemente, uma tarefa em que a IA é altamente eficaz.",
+      "t2": "Por meio de redes neurais e algoritmos de aprendizado profundo, a IA permite monitorar o desmatamento, avaliar a saúde dos ecossistemas e prever a dispersão de poluentes. Na Amazônia, por exemplo, a IA tem sido utilizada para detectar desmatamentos em tempo real, permitindo uma resposta mais rápida para a conservação da floresta. Esse monitoramento contínuo e detalhado possibilita políticas mais informadas de conservação e recuperação ambiental, além de quantificar o impacto de mudanças no uso da terra."
+    },
+    "text4": {
+      "title": "Desafios e Recomendações",
+      "t1": "Apesar das grandes promessas, a adoção da IA para mitigação climática enfrenta desafios significativos. Entre eles estão o alto custo da tecnologia, a necessidade de infraestrutura robusta para processar grandes volumes de dados e preocupações éticas relacionadas à privacidade. Outro ponto importante é o impacto ambiental da própria infraestrutura de IA, que demanda uma quantidade significativa de energia e recursos para operar.",
+      "t2": "<icef>A ICEF (2023)</icef> sugere o desenvolvimento de políticas públicas para fomentar o uso da IA em iniciativas climáticas, promovendo também o compartilhamento de dados climáticos entre instituições. Incentivos para pesquisa e desenvolvimento de IA focada em sustentabilidade são cruciais para reduzir barreiras financeiras e técnicas, enquanto a criação de diretrizes éticas pode mitigar preocupações com privacidade e segurança."
+    },
+    "conclusion": {
+      "title": "Conclusão",
+      "text": "A IA tem o potencial de revolucionar a forma como lidamos com as mudanças climáticas, fornecendo ferramentas para eficiência energética, previsão climática, monitoramento das mudanças climáticas, dentre outros. No entanto, para que sua contribuição seja maximizada, é necessário superar os desafios atuais, expandindo a disponibilidade de dados, integrando modelos de IA com abordagens tradicionais e garantindo que os desenvolvimentos sejam eticamente sustentáveis. A implementação de políticas públicas que apoiem o uso responsável da IA e promovam a colaboração entre instituições pode acelerar o desenvolvimento de tecnologias mais robustas e acessíveis, consolidando a IA como um dos pilares da sustentabilidade ambiental para as próximas gerações."
+    }
+  },
+  "FeatureSection": {
+    "title": "Benefícios da IA no Contexto Climático",
+    "resume": "Abaixo, destacamos os principais benefícios que ilustram como a IA pode promover um futuro mais sustentável e resiliente.",
+    "feature1": {
+      "name": "Análise de dados complexos",
+      "description": "A IA facilita a análise de grandes volumes de dados climáticos, permitindo previsões mais precisas."
+    },
+    "feature2": {
+      "name": "Otimização de processos",
+      "description": "Sistemas de IA otimizam redes elétricas, agricultura e transporte, reduzindo o consumo energético e as emissões."
+    },
+    "feature3": {
+      "name": "Eficiência em monitoramento ambiental",
+      "description": "Ferramentas de IA monitoram florestas, emissões e ecossistemas, ajudando a identificar e mitigar impactos ambientais."
+    },
+    "feature4": {
+      "name": "Segurança avançada",
+      "description": "A IA melhora a segurança de infraestruturas críticas, tornando-as mais resilientes às mudanças climáticas e eventos extremos."
+    },
+    "video1": {
+      "title": "A IA pode ajudar a resolver a crise climática? | Sims Witherspoon | TED"
+    },
+    "video2": {
+      "title": "Tecnologia Climática vs. Tecnologia Limpa: Qual é a diferença?"
+    }
+  },
+  "HeroSection": {
+    "title": "EcoAI - Inteligência Artificial para a Sustentabilidade",
+    "introduction": "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
+    "resume": "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado.",
+    "button": "Saiba mais"
+  },
+  "HoverImageLinks": {
+    "title": "Fontes relevantes para pesquisa",
+    "link1": {
+      "heading": "UNU",
+      "subheading": "Universidade das Nações Unidas"
+    },
+    "link2": {
+      "heading": "NATURE",
+      "subheading": "Nature é a principal revista científica multidisciplinar do mundo"
+    },
+    "link3": {
+      "heading": "EARTH.ORG",
+      "subheading": "Um site de notícias ambientais que tem como objetivo ilustrar as repercussões das mudanças climáticas sobre os seres humanos e o meio ambiente por meio do jornalismo de dados."
+    }
   }
 }
