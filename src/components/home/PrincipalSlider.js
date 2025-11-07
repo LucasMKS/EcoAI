@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import {Link} from '../../navigation';
 import React from "react";
 import { ImagesSlider } from "./images-slider";
 import {useTranslations} from 'next-intl';
