@@ -1,29 +1,12 @@
 "use client";
 
 import React from "react";
-import { useLanguage } from "../language/LanguageContext";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 
 const AboutUs = () => {
-  const { language } = useLanguage();
-
-  const content = {
-    pt: {
-      title: "Sobre Nós",
-      subtitle: "Conheça Nossa Equipe",
-      introduction:
-        "Nossa equipe é formada por estudantes apaixonados por tecnologia e sustentabilidade.",
-      course: "Curso",
-    },
-    en: {
-      title: "About Us",
-      subtitle: "Meet Our Team",
-      introduction:
-        "Our team is made up of students passionate about technology and sustainability.",
-      course: "Course",
-    },
-  };
+  const t = useTranslations("AboutUs");
 
   return (
     <div className="container mx-auto px-4 py-20 bg-green-100 w-full rounded-xl rounded-b-none border-2 border-green-900">
@@ -33,7 +16,7 @@ const AboutUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        {content[language].title}
+        {t("title")}
       </motion.h1>
 
       <motion.p
@@ -42,7 +25,7 @@ const AboutUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        {content[language].introduction}
+        {t("introduction")}
       </motion.p>
       <AnimatedTestimonialsDemo />
     </div>

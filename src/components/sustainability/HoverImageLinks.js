@@ -1,69 +1,32 @@
 import React, { useRef } from "react";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import { useLanguage } from "../language/LanguageContext";
+import { useTranslations } from "next-intl";
 import { FiArrowRight } from "react-icons/fi";
 
 export default function HoverImageLinks() {
-  const { language } = useLanguage();
-
-  const content = {
-    pt: {
-      title: "Fontes relevantes para pesquisa",
-      link: {
-        heading: "UNU",
-        subheading: "Universidade das Nações Unidas",
-      },
-      link2: {
-        heading: "NATURE",
-        subheading:
-          "Nature é a principal revista científica multidisciplinar do mundo",
-      },
-      link3: {
-        heading: "EARTH.ORG",
-        subheading:
-          "Um site de notícias ambientais que tem como objetivo ilustrar as repercussões das mudanças climáticas sobre os seres humanos e o meio ambiente por meio do jornalismo de dados.",
-      },
-    },
-    en: {
-      title: "Relevant sources for research",
-      link: {
-        heading: "UNU",
-        subheading: "United Nations University",
-      },
-      link2: {
-        heading: "NATURE",
-        subheading:
-          "Nature is the world's leading multidisciplinary science journal",
-      },
-      link3: {
-        heading: "EARTH.ORG",
-        subheading:
-          "an environmental news website that aims to illustrate the repercussions of climate change on the humans and the environment with power data journalism.",
-      },
-    },
-  };
+  const t = useTranslations("HoverImageLinks");
 
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
       <h1 className="text-3xl md:text-4xl font-bold text-center text-white">
-        {content[language].title}
+        {t("title")}
       </h1>
       <div className="mx-auto max-w-5xl">
         <Link
-          heading={content[language].link.heading}
-          subheading={content[language].link.subheading}
+          heading={t("link1.heading")}
+          subheading={t("link1.subheading")}
           imgSrc="/images/unuedu.webp"
           href="https://unu.edu/topics/climate-change"
         />
         <Link
-          heading={content[language].link2.heading}
-          subheading={content[language].link2.subheading}
+          heading={t("link2.heading")}
+          subheading={t("link2.subheading")}
           imgSrc="/images/nature.png"
           href="https://www.nature.com/nclimate/"
         />
         <Link
-          heading={content[language].link3.heading}
-          subheading={content[language].link3.subheading}
+          heading={t("link3.heading")}
+          subheading={t("link3.subheading")}
           imgSrc="/images/earthorg.jpg"
           href="https://earth.org/climate-change/"
         />

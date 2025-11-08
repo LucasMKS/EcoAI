@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Edit, PlusSquare, Share, Menu } from "lucide-react";
 import Link from "next/link";
-import LanguageSwitcher from "../components/language/LanguageSwitcher";
-import { useLanguage } from "../components/language/LanguageContext";
 import { motion } from "framer-motion";
+import {useTranslations} from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const NavButton = ({ href, children, onClick }) => {
   return (
@@ -20,21 +20,9 @@ const NavButton = ({ href, children, onClick }) => {
   );
 };
 
-const StaggeredDropDown = ({ language }) => {
+const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
-
-  const dropdownItems = {
-    pt: {
-      home: "Inicio",
-      sustainability: "Sustentabilidade",
-      about: "Sobre",
-    },
-    en: {
-      home: "Home",
-      sustainability: "Sustainability",
-      about: "About",
-    },
-  };
+  const t = useTranslations('Navbar');
 
   return (
     <motion.div animate={open ? "open" : "closed"} className="relative">
@@ -43,7 +31,7 @@ const StaggeredDropDown = ({ language }) => {
         className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-indigo-500 hover:bg-indigo-600 transition-colors"
       >
         <span className="font-medium text-sm">
-          {dropdownItems[language].postActions}
+          Menu
         </span>
         <motion.span variants={iconVariants}>
           <Menu size={16} />
@@ -59,19 +47,19 @@ const StaggeredDropDown = ({ language }) => {
         <Option
           setOpen={setOpen}
           Icon={Edit}
-          text={dropdownItems[language].home}
+          text={t('home')}
           href="/"
         />
         <Option
           setOpen={setOpen}
           Icon={PlusSquare}
-          text={dropdownItems[language].sustainability}
+          text={t('sustainability')}
           href="/sustainability"
         />
         <Option
           setOpen={setOpen}
           Icon={Share}
-          text={dropdownItems[language].about}
+          text={t('about')}
           href="/about"
         />
       </motion.ul>
@@ -97,20 +85,7 @@ const Option = ({ text, Icon, setOpen, href }) => {
 };
 
 const Navbar = () => {
-  const { language } = useLanguage();
-
-  const navItems = {
-    pt: {
-      home: "Início",
-      about: "Sobre",
-      sustainability: "Sustentabilidade",
-    },
-    en: {
-      home: "Home",
-      about: "About",
-      sustainability: "Sustainability",
-    },
-  };
+  const t = useTranslations('Navbar');
 
   return (
     <nav className="bg-foreground text-white fixed top-0 w-full z-10 opacity-95 border-b-2 border-green-950">
@@ -126,17 +101,17 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden md:flex space-x-6 mx-auto">
-            <NavButton href="/">{navItems[language].home}</NavButton>
+            <NavButton href="/">{t('home')}</NavButton>
             <NavButton href="/sustainability">
-              {navItems[language].sustainability}
+              {t('sustainability')}
             </NavButton>
-            <NavButton href="/about">{navItems[language].about}</NavButton>
+            <NavButton href="/about">{t('about')}</NavButton>
           </div>
           <div className="hidden md:flex">
             <LanguageSwitcher />
           </div>
           <div className="md:hidden">
-            <StaggeredDropDown language={language} />
+            <StaggeredDropDown />
           </div>
         </div>
       </div>

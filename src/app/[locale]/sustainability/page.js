@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useRef } from "react";
-import HeroSection from "../../components/sustainability/HeroSection";
-import SwipeCarousel from "../../components/sustainability/Carousel";
-import HoverImageLinks from "../../components/sustainability/HoverImageLinks";
-import BlogArticles from "../../components/sustainability/BlogArticles";
+import HeroSection from "../../../components/sustainability/HeroSection";
+import SwipeCarousel from "../../../components/sustainability/Carousel";
+import HoverImageLinks from "../../../components/sustainability/HoverImageLinks";
+import BlogArticles from "../../../components/sustainability/BlogArticles";
 import dynamic from "next/dynamic";
 
 const LazyFeatureSection = dynamic(
-  () => import("../../components/sustainability/FeatureSection"),
+  () => import("../../../components/sustainability/FeatureSection"),
   { ssr: false } // Desativa a renderização no servidor
 );
 
