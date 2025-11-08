@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./globals.css";
-import { LanguageProvider } from "../components/language/LanguageContext";
-import Footer from "../components/FooterPage";
+import Footer from "../../components/FooterPage";
 import { Inter, Roboto, Alkatra, Roboto_Condensed } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages, setRequestLocale} from 'next-intl/server';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,14 +34,17 @@ export const metadata = {
   description: "Artificial Intelligence and Sustainability",
 };
 
-export default async function RootLayout({ children }) {
+export default async function RootLayout({ children, params: {locale} }) {
+  setRequestLocale(locale);
+  const messages = await getMessages();
+
   return (
-    <html>
+    <html lang={locale}>
       <body
         className={`${inter.variable} ${roboto.variable} ${alkatra.variable} ${roboto_Condensed.variable}`}
       >
         <NextTopLoader />
-        <LanguageProvider>
+        <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>
             {children}
@@ -48,7 +52,7 @@ export default async function RootLayout({ children }) {
               <Footer />{" "}
             </div>
           </main>
-        </LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

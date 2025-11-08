@@ -1,28 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useLanguage } from "../language/LanguageContext";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection({ onLearnMoreClick }) {
-  const { language } = useLanguage();
-
-  const content = {
-    pt: {
-      title: "EcoAI - Inteligência Artificial para a Sustentabilidade",
-      introduction:
-        "A IA tem um grande potencial para auxiliar nos esforços de mitigação das mudanças climáticas em diversas áreas. No entanto, é importante considerar cuidadosamente seus impactos e limitações, buscando uma aplicação responsável e eficaz dessas tecnologias.",
-      resume:
-        "A inteligência artificial é uma tecnologia emergente com um imenso potencial para enfrentar desafios globais. Diante da crise climática, a IA pode ser utilizada como uma ferramenta poderosa para desenvolver soluções inovadoras que auxiliam a mitigação dos efeitos das mudanças climáticas. Esse projeto explora como a IA pode ser aplicada em diversos cenários para monitorar, prever e reduzir os impactos das atividades humanas no ambiente, contribuindo para um planeta mais sustentável e equilibrado.",
-      button: "Saiba mais",
-    },
-    en: {
-      title: "EcoAI - Artificial Intelligence for Sustainability",
-      introduction:
-        "AI has great potential to assist in climate change mitigation efforts across various areas. However, it is important to carefully consider its impacts and limitations, seeking a responsible and effective application of these technologies.",
-      resume:
-        "In light of the climate crisis, AI can be used as a powerful tool to develop innovative solutions that help mitigate the effects of climate change. This project explores how AI can be applied in different scenarios to monitor, predict, and reduce the impacts of human activities on the environment, contributing to a more sustainable and balanced planet.",
-      button: "Learn more",
-    },
-  };
+  const t = useTranslations("HeroSection");
 
   return (
     <div className="min-h-screen bg-[#1A1A1A] flex items-center px-4 md:px-6 lg:px-8">
@@ -41,7 +22,7 @@ export default function HeroSection({ onLearnMoreClick }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              {content[language].title}
+              {t("title")}
             </motion.h1>
             <motion.p
               className="text-neutral-300 text-lg max-w-lg"
@@ -49,7 +30,7 @@ export default function HeroSection({ onLearnMoreClick }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              {content[language].introduction}
+              {t("introduction")}
             </motion.p>
           </div>
 
@@ -59,9 +40,7 @@ export default function HeroSection({ onLearnMoreClick }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <p className="text-neutral-300 text-lg max-w-lg">
-              {content[language].resume}
-            </p>
+            <p className="text-neutral-300 text-lg max-w-lg">{t("resume")}</p>
           </motion.div>
           <motion.button
             onClick={onLearnMoreClick}
@@ -69,7 +48,7 @@ export default function HeroSection({ onLearnMoreClick }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {content[language].button}
+            {t("button")}
           </motion.button>
         </motion.div>
 
